@@ -137,42 +137,62 @@ class Email extends CActiveRecord {
     }
 
     public function sending($to, $name, $from, $subject, $content) {
-//            foreach ($to as $arr){
-        $name = '=?UTF-8?B?' . base64_encode($name) . '?=';
-        $subject = '=?UTF-8?B?' . base64_encode($subject) . '?=';
-        $headers = "From: $name <{$from}>\r\n" .
-                "Reply-To: {$from}\r\n" .
-                "MIME-Version: 1.0\r\n" .
-                "Content-type: text/html; charset: utf8\r\n";
 
-        mail($to, $subject, $content, $headers);
-//            }
+        $name = 'Yulianto Frandisfds';
+        $email = 'yulianto@landa.co.id';
+        $subject = "Judul Pengiriman";
+        $message = "WOoooooooooooooi kog gak masuk2 si";
+
+        $to = $email;
+
+        $message = "From:$name <br />" . $message;
+
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
+
+// More headers
+        $headers .= 'From: <info@sec.cusawiran.org>' . "\r\n";
+//        $headers .= 'Cc: admin@yourdomain.com' . "\r\n";
+        @mail($to, $subject, $message, $headers);
+        if (@mail) {
+            echo "Email sent successfully !!";
+        }
+
+        
+        
+        
+        
+//        $email = "yuliantofrandi@gmail.com";
+//        $content = "From:$name<br />" . $content;
+//
+//        $headers = "MIME-Version: 1.0" . "\r\n";
+//        $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
+//
+//// More headers
+//        $headers .= 'From: <info@sec.cusawiran.org>' . "\r\n";
+////        $headers .= 'Cc: admin@yourdomain.com' . "\r\n";
+//        @mail($to, $subject, $content, $headers);
+//        if (@mail) {
+//            logs("Email sent successfully !!".$to.'-'.$subject);
+//        } else {
+//            logs("Gagal");
+//        }
+//            $name = '=?UTF-8?B?' . base64_encode($name) . '?=';
+//            $subject = '=?UTF-8?B?' . base64_encode($subject) . '?=';
+//            $headers = "From: $name <{$from}>\r\n" .
+//                    "Reply-To: {$from}\r\n" .
+//                    "MIME-Version: 1.0\r\n" .
+//                    "Content-type: text/html; charset: utf8\r\n";
+//
+//            @mail($to, $subject, $content, $headers);
     }
 
     public function send($from, $to, $title, $content, $cc_to_admin = FALSE) {
-        $siteConfig = SiteConfig::model()->listSiteConfig();
-
-        $mEmail = new Email;
-        $mEmail->email_from = $from;
-        $mEmail->email_to = $to;
-        $mEmail->title = $title;
-        $mEmail->content = $content;
-        $mEmail->client = param('client');
-        $mEmail->is_send = 1;
-        $mEmail->save();
-        $this->sending($mEmail->email_to, $mEmail->client, $mEmail->email_from, $mEmail->title, $mEmail->content);
-
-        if ($cc_to_admin) {
-            $mEmail = new Email;
-            $mEmail->email_from = $from;
-            $mEmail->email_to = $siteConfig->email;
-            $mEmail->title = 'CC : ' . $title;
-            $mEmail->content = $content;
-            $mEmail->client = param('client');
-            $mEmail->is_send = 1;
-            $mEmail->save();
-            $this->sending($mEmail->email_to, $mEmail->client, $mEmail->email_from, $mEmail->title, $mEmail->content);
-        }
+//        $siteConfig = SiteConfig::model()->listSiteConfig();
+//        $this->sending($mEmail->email_to, $mEmail->client, $mEmail->email_from, $mEmail->title, $mEmail->content);
+//        if ($cc_to_admin) {
+//            $this->sending($mEmail->email_to, $mEmail->client, $mEmail->email_from, $mEmail->title, $mEmail->content);
+//        }
     }
 
 }

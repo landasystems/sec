@@ -371,7 +371,6 @@
                                         <?php $this->endWidget(); ?>
 
                                     </div>
-                                    <div class="gradient"></div>
                                 </div>
                                 <center>
                                     <img src="<?php echo param('urlImg') ?>file/iklan.png" class="img-responsive"/>

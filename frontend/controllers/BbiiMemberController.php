@@ -249,7 +249,8 @@ class BbiiMemberController extends Controller {
     }
 
     public function actionKirim() {
-        Email::model()->send("yulianto@landa.co.id","Yulianto Frandi","yuliantofrandi@gmail.com", 'Reset Password @' . param('client'), "ini coba", FALSE);
+        
+        Email::model()->sending("yulianto@landa.co.id","SEC CU Sawiran","info@sec.cusawiran.org", 'Reset Password - ' . param('client'), "kakakkaka");
     }
 
     public function actionSendEmail() {
