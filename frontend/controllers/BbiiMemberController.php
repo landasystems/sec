@@ -225,8 +225,7 @@ class BbiiMemberController extends Controller {
             // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
             if (!isset($_GET['ajax']))
                 $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
-        }
-        else
+        } else
             throw new CHttpException(400, 'Invalid request. Please do not repeat this request again.');
     }
 
@@ -249,6 +248,10 @@ class BbiiMemberController extends Controller {
         ));
     }
 
+    public function actionKirim() {
+        Email::model()->send("yulianto@landa.co.id","Yulianto Frandi","yuliantofrandi@gmail.com", 'Reset Password @' . param('client'), "ini coba", FALSE);
+    }
+
     public function actionSendEmail() {
         if (empty($_POST['email'])) {
             user()->setFlash('success', '<strong></strong>Masukan alamat email anda.');
@@ -260,7 +263,7 @@ class BbiiMemberController extends Controller {
                 $this->redirect(url('forgot-password'));
             } else {
                 $siteConfig = SiteConfig::model()->listSiteConfig();
-                
+
                 $emailContent = '
                     <table border="1" cellspacing="0" co<table border="0" cellpadding="0" cellspacing="0" style="font-size: 13px" width="650px">
     <tbody>

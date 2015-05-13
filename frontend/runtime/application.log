@@ -1,0 +1,1651 @@
+2015/03/04 15:54:04 [warning] [application] Failed to set unsafe attribute "email" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/04 15:54:04 [warning] [application] Failed to set unsafe attribute "pin" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/04 15:54:04 [warning] [application] Failed to set unsafe attribute "city_id" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/04 15:54:04 [warning] [application] Failed to set unsafe attribute "birthdate" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/04 15:54:04 [warning] [application] Failed to set unsafe attribute "address" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/04 15:54:04 [error] [''] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (49)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/05 16:47:19 [warning] [application] Failed to set unsafe attribute "id" of "BbiiTopic".
+in /var/www/sec/frontend/modules/bbii/controllers/ModeratorController.php (320)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/06 08:30:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/sec/common/lib/yii/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/sec/common/lib/yii/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#6 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('myPost')
+#8 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/member/my...')
+#9 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#11 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/member/myPost/id/1
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/forum
+---
+2015/03/06 08:30:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/sec/common/lib/yii/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/sec/common/lib/yii/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#6 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('myPost')
+#8 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/member/my...')
+#9 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#11 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/member/myPost/id/1
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/forum/member/view/id/1
+---
+2015/03/06 08:31:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/sec/common/lib/yii/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/sec/common/lib/yii/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#6 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('myPost')
+#8 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/member/my...')
+#9 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#11 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/member/myPost/id/1
+---
+2015/03/06 08:31:16 [error] [php] Undefined variable: data (/var/www/sec/frontend/modules/bbii/views/member/myPost.php:1)
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile()
+#1 /var/www/sec/common/lib/yii/web/CController.php(869): MemberController->renderFile()
+#2 /var/www/sec/common/lib/yii/web/CController.php(782): MemberController->renderPartial()
+#3 /var/www/sec/frontend/modules/bbii/controllers/MemberController.php(183): MemberController->render()
+#4 unknown(0): MemberController->actionMyPost()
+#5 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#6 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): MemberController->runAction()
+#9 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/sec/common/lib/yii/web/CController.php(1145): CAccessControlFilter->filter()
+#11 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): MemberController->filterAccessControl()
+#12 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#13 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#14 /var/www/sec/common/lib/yii/web/CController.php(265): MemberController->runActionWithFilters()
+#15 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): MemberController->run()
+#16 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/sec/frontend/www/secsawiran/index.php(19): CWebApplication->run()
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/member/myPost/id/1
+in /var/www/sec/frontend/modules/bbii/views/member/myPost.php (1)
+in /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php (40)
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (183)
+2015/03/06 08:35:37 [error] [exception.CException] exception 'CException' with message 'CActiveDataProvider and its behaviors do not have a method or closure named "search".' in /var/www/sec/common/lib/yii/base/CComponent.php:266
+Stack trace:
+#0 /var/www/sec/frontend/modules/bbii/views/member/myPost.php(5): CComponent->__call('search', Array)
+#1 /var/www/sec/frontend/modules/bbii/views/member/myPost.php(5): CActiveDataProvider->search()
+#2 /var/www/sec/common/lib/yii/web/CBaseController.php(126): require('/var/www/sec/fr...')
+#3 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/fr...', Array, true)
+#4 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(MemberController), '/var/www/sec/fr...', Array, true)
+#5 /var/www/sec/common/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/sec/fr...', Array, true)
+#6 /var/www/sec/common/lib/yii/web/CController.php(782): CController->renderPartial('myPost', Array, true)
+#7 /var/www/sec/frontend/modules/bbii/controllers/MemberController.php(183): CController->render('myPost', Array)
+#8 [internal function]: MemberController->actionMyPost('1')
+#9 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(MemberController), Array)
+#10 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(MemberController), Object(ReflectionMethod), Array)
+#11 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#18 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('myPost')
+#20 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/member/my...')
+#21 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#22 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#23 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/member/myPost/id/1
+---
+2015/03/06 08:35:56 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in /var/www/sec/common/lib/yii/zii/widgets/CBaseListView.php:109
+Stack trace:
+#0 /var/www/sec/common/lib/yii/zii/widgets/grid/CGridView.php(339): CBaseListView->init()
+#1 /var/www/sec/common/lib/yii/web/CBaseController.php(147): CGridView->init()
+#2 /var/www/sec/common/lib/yii/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /var/www/sec/frontend/modules/bbii/views/member/myPost.php(11): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /var/www/sec/common/lib/yii/web/CBaseController.php(126): require('/var/www/sec/fr...')
+#5 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/fr...', Array, true)
+#6 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(MemberController), '/var/www/sec/fr...', Array, true)
+#7 /var/www/sec/common/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/sec/fr...', Array, true)
+#8 /var/www/sec/common/lib/yii/web/CController.php(782): CController->renderPartial('myPost', Array, true)
+#9 /var/www/sec/frontend/modules/bbii/controllers/MemberController.php(183): CController->render('myPost', Array)
+#10 [internal function]: MemberController->actionMyPost('1')
+#11 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(MemberController), Array)
+#12 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(MemberController), Object(ReflectionMethod), Array)
+#13 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#20 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('myPost')
+#22 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/member/my...')
+#23 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#25 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/member/myPost/id/1
+---
+2015/03/06 08:36:10 [error] [exception.CException] exception 'CException' with message 'CActiveDataProvider and its behaviors do not have a method or closure named "getValidators".' in /var/www/sec/common/lib/yii/base/CComponent.php:266
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/helpers/CHtml.php(2236): CComponent->__call('getValidators', Array)
+#1 /var/www/sec/common/lib/yii/web/helpers/CHtml.php(2236): CActiveDataProvider->getValidators('id')
+#2 /var/www/sec/common/lib/yii/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(CActiveDataProvider), 'id', Array)
+#3 /var/www/sec/common/lib/yii/zii/widgets/grid/CDataColumn.php(103): CHtml::activeTextField(Object(CActiveDataProvider), 'id', Array)
+#4 /var/www/sec/common/lib/yii/zii/widgets/grid/CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#5 /var/www/sec/common/lib/yii/zii/widgets/grid/CGridView.php(532): CGridColumn->renderFilterCell()
+#6 /var/www/sec/common/lib/yii/zii/widgets/grid/CGridView.php(510): CGridView->renderFilter()
+#7 /var/www/sec/common/lib/yii/zii/widgets/grid/CGridView.php(480): CGridView->renderTableHeader()
+#8 /var/www/sec/common/lib/yii/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 /var/www/sec/common/lib/yii/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 /var/www/sec/common/lib/yii/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#12 /var/www/sec/common/lib/yii/web/CBaseController.php(173): CBaseListView->run()
+#13 /var/www/sec/frontend/modules/bbii/views/member/myPost.php(11): CBaseController->widget('zii.widgets.gri...', Array)
+#14 /var/www/sec/common/lib/yii/web/CBaseController.php(126): require('/var/www/sec/fr...')
+#15 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/fr...', Array, true)
+#16 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(MemberController), '/var/www/sec/fr...', Array, true)
+#17 /var/www/sec/common/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/sec/fr...', Array, true)
+#18 /var/www/sec/common/lib/yii/web/CController.php(782): CController->renderPartial('myPost', Array, true)
+#19 /var/www/sec/frontend/modules/bbii/controllers/MemberController.php(183): CController->render('myPost', Array)
+#20 [internal function]: MemberController->actionMyPost('1')
+#21 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(MemberController), Array)
+#22 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(MemberController), Object(ReflectionMethod), Array)
+#23 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#24 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#25 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#26 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#27 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#28 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#29 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#30 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#31 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('myPost')
+#32 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/member/my...')
+#33 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#34 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#35 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/member/myPost/id/1
+---
+2015/03/06 09:35:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested topic does not exist.' in /var/www/sec/frontend/modules/bbii/controllers/ForumController.php:142
+Stack trace:
+#0 [internal function]: ForumController->actionTopic('5', NULL, '12')
+#1 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ForumController), Array)
+#2 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ForumController), Object(ReflectionMethod), Array)
+#3 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#10 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('topic')
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/forum/top...')
+#13 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#15 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/forum/topic/id/5/BbiiPost_page/1/postId/12
+---
+2015/03/07 14:15:50 [error] [0] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 12:06:11 [error] ['Your password are invalid'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 12:14:35 [error] ['Your password are invalid'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 12:18:12 [error] ['Your password are invalid'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 12:20:11 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 12:20:16 [error] ['Your password are invalid'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 12:20:18 [error] ['Your password are invalid'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 12:24:35 [error] ['Your password are invalid'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 12:34:07 [error] ['Your password are invalid'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 12:54:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "forgotPassword".' in /var/www/sec/common/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forgotPassword')
+#1 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forgotPassword
+---
+2015/03/09 12:59:52 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 13:02:20 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "forgotPassword".' in /var/www/sec/common/lib/yii/web/CController.php:878
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CController.php(782): CController->renderPartial('forgotPassword', Array, true)
+#1 /var/www/sec/frontend/controllers/UserController.php(157): CController->render('forgotPassword', Array)
+#2 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): UserController->actionForgotPassword()
+#3 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/sec/common/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('forgotPassword')
+#7 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('user/forgotPass...')
+#8 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#10 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forgot-password
+---
+2015/03/09 13:04:13 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 13:24:04 [error] [exception.CException] exception 'CException' with message 'BbiiMemberController contains improperly nested widget tags in its view "/var/www/sec/frontend/views/bbiiMember/forgotPassword.php". A TbActiveForm widget does not have an endWidget() call.' in /var/www/sec/common/lib/yii/web/CBaseController.php:101
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/sec/fr...', Array, true)
+#1 /var/www/sec/common/lib/yii/web/CController.php(782): CController->renderPartial('forgotPassword', Array, true)
+#2 /var/www/sec/frontend/controllers/BbiiMemberController.php(226): CController->render('forgotPassword', Array)
+#3 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): BbiiMemberController->actionForgotPassword()
+#4 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/sec/common/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('forgotPassword')
+#8 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('bbiiMember/forg...')
+#9 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#11 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forgot-password
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/site/login
+---
+2015/03/09 13:24:46 [error] [exception.CException] exception 'CException' with message 'BbiiMemberController contains improperly nested widget tags in its view "/var/www/sec/frontend/views/bbiiMember/forgotPassword.php". A TbActiveForm widget does not have an endWidget() call.' in /var/www/sec/common/lib/yii/web/CBaseController.php:101
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/sec/fr...', Array, true)
+#1 /var/www/sec/common/lib/yii/web/CController.php(782): CController->renderPartial('forgotPassword', Array, true)
+#2 /var/www/sec/frontend/controllers/BbiiMemberController.php(226): CController->render('forgotPassword', Array)
+#3 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): BbiiMemberController->actionForgotPassword()
+#4 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/sec/common/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('forgotPassword')
+#8 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('bbiiMember/forg...')
+#9 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#11 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forgot-password
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/site/login
+---
+2015/03/09 13:25:03 [error] [exception.CException] exception 'CException' with message 'BbiiMemberController contains improperly nested widget tags in its view "/var/www/sec/frontend/views/bbiiMember/forgotPassword.php". A TbActiveForm widget does not have an endWidget() call.' in /var/www/sec/common/lib/yii/web/CBaseController.php:101
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/sec/fr...', Array, true)
+#1 /var/www/sec/common/lib/yii/web/CController.php(782): CController->renderPartial('forgotPassword', Array, true)
+#2 /var/www/sec/frontend/controllers/BbiiMemberController.php(226): CController->render('forgotPassword', Array)
+#3 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): BbiiMemberController->actionForgotPassword()
+#4 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/sec/common/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('forgotPassword')
+#8 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('bbiiMember/forg...')
+#9 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#11 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forgot-password
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/site/login
+---
+2015/03/09 13:25:18 [error] [exception.CException] exception 'CException' with message 'BbiiMemberController contains improperly nested widget tags in its view "/var/www/sec/frontend/views/bbiiMember/forgotPassword.php". A TbActiveForm widget does not have an endWidget() call.' in /var/www/sec/common/lib/yii/web/CBaseController.php:101
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/sec/fr...', Array, true)
+#1 /var/www/sec/common/lib/yii/web/CController.php(782): CController->renderPartial('forgotPassword', Array, true)
+#2 /var/www/sec/frontend/controllers/BbiiMemberController.php(226): CController->render('forgotPassword', Array)
+#3 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): BbiiMemberController->actionForgotPassword()
+#4 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/sec/common/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('forgotPassword')
+#8 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('bbiiMember/forg...')
+#9 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#11 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forgot-password
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/site/login
+---
+2015/03/09 13:42:32 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 13:43:21 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 13:43:30 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 13:43:45 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 13:43:59 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 13:44:40 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 13:45:38 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 13:45:59 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 13:46:13 [error] ['Your password are invalid'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 13:46:16 [error] ['Your password are invalid'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 13:47:01 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 13:48:24 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 13:49:01 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 13:53:11 [error] [php] Trying to get property of non-object (/var/www/sec/frontend/controllers/BbiiMemberController.php:250)
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/sec/common/lib/yii/web/CController.php(286): BbiiMemberController->runAction()
+#3 /var/www/sec/common/lib/yii/web/CController.php(265): BbiiMemberController->runActionWithFilters()
+#4 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): BbiiMemberController->run()
+#5 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/sec/frontend/www/secsawiran/index.php(19): CWebApplication->run()
+REQUEST_URI=/sec/frontend/www/secsawiran/change-password/c4ca4238a0b923820dcc509a6f75849b
+in /var/www/sec/frontend/controllers/BbiiMemberController.php (250)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/09 13:58:55 [error] [php] Creating default object from empty value (/var/www/sec/frontend/controllers/UserController.php:192)
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CController.php(286): UserController->runAction()
+#1 /var/www/sec/common/lib/yii/web/CController.php(265): UserController->runActionWithFilters()
+#2 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): UserController->run()
+#3 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/sec/frontend/www/secsawiran/index.php(19): CWebApplication->run()
+REQUEST_URI=/sec/frontend/www/secsawiran/user/savePassword
+in /var/www/sec/frontend/controllers/UserController.php (192)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/09 13:59:13 [error] [php] Creating default object from empty value (/var/www/sec/frontend/controllers/BbiiMemberController.php:262)
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CController.php(286): BbiiMemberController->runAction()
+#1 /var/www/sec/common/lib/yii/web/CController.php(265): BbiiMemberController->runActionWithFilters()
+#2 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): BbiiMemberController->run()
+#3 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/sec/frontend/www/secsawiran/index.php(19): CWebApplication->run()
+REQUEST_URI=/sec/frontend/www/secsawiran/bbiiMember/savePassword
+in /var/www/sec/frontend/controllers/BbiiMemberController.php (262)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/09 14:00:05 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 14:17:21 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 14:17:21 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 14:32:21 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 14:40:16 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/09 14:40:32 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/11 09:23:19 [warning] [application] Failed to set unsafe attribute "email" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/11 09:23:19 [warning] [application] Failed to set unsafe attribute "pin" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/11 09:23:19 [warning] [application] Failed to set unsafe attribute "city_id" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/11 09:23:19 [warning] [application] Failed to set unsafe attribute "birthdate" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/11 09:23:19 [warning] [application] Failed to set unsafe attribute "address" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/11 09:23:19 [warning] [application] Failed to set unsafe attribute "avatar" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/11 09:23:19 [error] [''] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (49)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/12 10:36:34 [error] [0] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/12 14:38:28 [error] [0] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/12 14:40:40 [warning] [application] Failed to set unsafe attribute "email" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/12 14:40:40 [warning] [application] Failed to set unsafe attribute "pin" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/12 14:40:40 [warning] [application] Failed to set unsafe attribute "city_id" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/12 14:40:40 [warning] [application] Failed to set unsafe attribute "birthdate" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/12 14:40:40 [warning] [application] Failed to set unsafe attribute "address" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/12 14:40:40 [warning] [application] Failed to set unsafe attribute "avatar" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/12 14:40:40 [error] [''] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (49)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/12 14:41:03 [warning] [application] Failed to set unsafe attribute "avatar" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (38)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/12 14:41:05 [warning] [application] Failed to set unsafe attribute "avatar" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (38)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/12 14:41:07 [warning] [application] Failed to set unsafe attribute "avatar" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (38)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/18 08:43:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested forum does not exist.' in /var/www/sec/frontend/modules/bbii/controllers/ForumController.php:90
+Stack trace:
+#0 [internal function]: ForumController->actionForum('forum')
+#1 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ForumController), Array)
+#2 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ForumController), Object(ReflectionMethod), Array)
+#3 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#10 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('forum')
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/forum/for...')
+#13 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#15 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/forum/forum/id/forum
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/forum/forum/forum/id/13
+---
+2015/03/18 09:03:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested topic does not exist.' in /var/www/sec/frontend/modules/bbii/controllers/ForumController.php:142
+Stack trace:
+#0 [internal function]: ForumController->actionTopic('1', NULL, NULL)
+#1 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ForumController), Array)
+#2 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ForumController), Object(ReflectionMethod), Array)
+#3 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#10 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('topic')
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/forum/top...')
+#13 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#15 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/forum/topic/id/1
+---
+2015/03/18 09:03:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested topic does not exist.' in /var/www/sec/frontend/modules/bbii/controllers/ForumController.php:142
+Stack trace:
+#0 [internal function]: ForumController->actionTopic('forum', NULL, NULL)
+#1 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ForumController), Array)
+#2 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ForumController), Object(ReflectionMethod), Array)
+#3 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#10 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('topic')
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/forum/top...')
+#13 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#15 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/forum/topic/id/forum
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/forum/forum/topic/id/1
+---
+2015/03/18 09:05:16 [error] [php] Undefined index: cari (/var/www/sec/frontend/controllers/TopicController.php:37)
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CController.php(286): TopicController->runAction()
+#1 /var/www/sec/common/lib/yii/web/CController.php(265): TopicController->runActionWithFilters()
+#2 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): TopicController->run()
+#3 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/sec/frontend/www/secsawiran/index.php(19): CWebApplication->run()
+REQUEST_URI=/sec/frontend/www/secsawiran/topic/cari?
+in /var/www/sec/frontend/controllers/TopicController.php (37)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/18 09:05:44 [error] [php] Undefined index: cari (/var/www/sec/frontend/controllers/TopicController.php:37)
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CController.php(286): TopicController->runAction()
+#1 /var/www/sec/common/lib/yii/web/CController.php(265): TopicController->runActionWithFilters()
+#2 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): TopicController->run()
+#3 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/sec/frontend/www/secsawiran/index.php(19): CWebApplication->run()
+REQUEST_URI=/sec/frontend/www/secsawiran/topic/cari?
+in /var/www/sec/frontend/controllers/TopicController.php (37)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/18 09:06:57 [error] [php] Use of undefined constant cari - assumed 'cari' (/var/www/sec/frontend/controllers/TopicController.php:27)
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CController.php(286): TopicController->runAction()
+#1 /var/www/sec/common/lib/yii/web/CController.php(265): TopicController->runActionWithFilters()
+#2 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): TopicController->run()
+#3 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/sec/frontend/www/secsawiran/index.php(19): CWebApplication->run()
+REQUEST_URI=/sec/frontend/www/secsawiran/topic/cari?
+in /var/www/sec/frontend/controllers/TopicController.php (27)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/18 09:07:55 [error] [php] Undefined index: cari (/var/www/sec/frontend/controllers/TopicController.php:29)
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CController.php(286): TopicController->runAction()
+#1 /var/www/sec/common/lib/yii/web/CController.php(265): TopicController->runActionWithFilters()
+#2 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): TopicController->run()
+#3 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/sec/frontend/www/secsawiran/index.php(19): CWebApplication->run()
+REQUEST_URI=/sec/frontend/www/secsawiran/topic/cari?
+in /var/www/sec/frontend/controllers/TopicController.php (29)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/18 09:09:10 [error] [php] Undefined index: cari (/var/www/sec/frontend/controllers/TopicController.php:29)
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CController.php(286): TopicController->runAction()
+#1 /var/www/sec/common/lib/yii/web/CController.php(265): TopicController->runActionWithFilters()
+#2 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): TopicController->run()
+#3 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/sec/frontend/www/secsawiran/index.php(19): CWebApplication->run()
+REQUEST_URI=/sec/frontend/www/secsawiran/topic/cari?
+in /var/www/sec/frontend/controllers/TopicController.php (29)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/18 09:17:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/logo-default.png".' in /var/www/sec/common/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('img/logo-defaul...')
+#1 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/img/logo-default.png
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/forum
+---
+2015/03/18 09:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/logo-default.png".' in /var/www/sec/common/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('img/logo-defaul...')
+#1 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/img/logo-default.png
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/forum
+---
+2015/03/18 09:40:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/logo-default.png".' in /var/www/sec/common/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('img/logo-defaul...')
+#1 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/img/logo-default.png
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/forum
+---
+2015/03/18 13:02:15 [error] [php] Undefined index: cari (/var/www/sec/frontend/controllers/TopicController.php:29)
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CController.php(286): TopicController->runAction()
+#1 /var/www/sec/common/lib/yii/web/CController.php(265): TopicController->runActionWithFilters()
+#2 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): TopicController->run()
+#3 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/sec/frontend/www/secsawiran/index.php(19): CWebApplication->run()
+REQUEST_URI=/sec/frontend/www/secsawiran/topic/cari?
+in /var/www/sec/frontend/controllers/TopicController.php (29)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/18 13:02:25 [error] [php] Undefined index: cari (/var/www/sec/frontend/controllers/TopicController.php:29)
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CController.php(286): TopicController->runAction()
+#1 /var/www/sec/common/lib/yii/web/CController.php(265): TopicController->runActionWithFilters()
+#2 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): TopicController->run()
+#3 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/sec/frontend/www/secsawiran/index.php(19): CWebApplication->run()
+REQUEST_URI=/sec/frontend/www/secsawiran/topic/cari?
+in /var/www/sec/frontend/controllers/TopicController.php (29)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/18 13:02:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "forum".' in /var/www/sec/common/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CController.php(270): CController->missingAction('forum')
+#1 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('forum')
+#2 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('topic/forum')
+#3 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/topic/forum
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/topic/cari?cari=rumah
+---
+2015/03/18 13:50:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "forum".' in /var/www/sec/common/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CController.php(270): CController->missingAction('forum')
+#1 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('forum')
+#2 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('topic/forum')
+#3 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/topic/forum
+HTTP_REFERER=http://192.168.1.11/sec/frontend/www/secsawiran/topic/cari?cari=rumah
+---
+2015/03/18 15:11:33 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/18 15:11:37 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/18 15:11:39 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/03/18 15:41:37 [error] [exception.CException] exception 'CException' with message 'Property "Event.url" is not defined.' in /var/www/sec/common/lib/yii/base/CComponent.php:130
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(145): CComponent->__get('url')
+#1 /var/www/sec/common/themes/frontend/sec/views/layouts/main.php(178): CActiveRecord->__get('url')
+#2 /var/www/sec/common/lib/yii/web/CBaseController.php(126): require('/var/www/sec/co...')
+#3 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/co...', Array, true)
+#4 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(ForumController), '/var/www/sec/co...', Array, true)
+#5 /var/www/sec/common/lib/yii/web/CController.php(784): CBaseController->renderFile('/var/www/sec/co...', Array, true)
+#6 /var/www/sec/frontend/modules/bbii/controllers/ForumController.php(64): CController->render('index', Array)
+#7 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): ForumController->actionIndex()
+#8 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#15 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('')
+#17 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum')
+#18 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#20 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/info
+---
+2015/03/18 15:45:07 [error] [php] Trying to get property of non-object (/var/www/sec/frontend/controllers/EventController.php:69)
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/sec/common/lib/yii/web/CController.php(286): EventController->runAction()
+#4 /var/www/sec/common/lib/yii/web/CController.php(265): EventController->runActionWithFilters()
+#5 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): EventController->run()
+#6 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/sec/frontend/www/secsawiran/index.php(19): CWebApplication->run()
+REQUEST_URI=/sec/frontend/www/secsawiran/event/forum
+in /var/www/sec/frontend/controllers/EventController.php (69)
+in /var/www/sec/frontend/controllers/EventController.php (43)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/18 15:48:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"2015-03-18 ORDER BY id desc LIMIT 4' at line 1. The SQL statement executed was: SELECT * FROM `acca_event` `t` WHERE date_event >="2015-03-18 ORDER BY id desc LIMIT 4.
+in /var/www/sec/common/themes/frontend/sec/views/layouts/main.php (176)
+in /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php (40)
+in /var/www/sec/frontend/modules/bbii/controllers/ForumController.php (64)
+2015/03/18 15:48:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"2015-03-18 ORDER BY id desc LIMIT 4' at line 1. The SQL statement executed was: SELECT * FROM `acca_event` `t` WHERE date_event >="2015-03-18 ORDER BY id desc LIMIT 4' in /var/www/sec/common/lib/yii/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/sec/common/themes/frontend/sec/views/layouts/main.php(176): CActiveRecord->findAll(Array)
+#4 /var/www/sec/common/lib/yii/web/CBaseController.php(126): require('/var/www/sec/co...')
+#5 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/co...', Array, true)
+#6 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(ForumController), '/var/www/sec/co...', Array, true)
+#7 /var/www/sec/common/lib/yii/web/CController.php(784): CBaseController->renderFile('/var/www/sec/co...', Array, true)
+#8 /var/www/sec/frontend/modules/bbii/controllers/ForumController.php(64): CController->render('index', Array)
+#9 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): ForumController->actionIndex()
+#10 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#17 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('')
+#19 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum')
+#20 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#22 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum
+---
+2015/03/18 16:48:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested forum does not exist.' in /var/www/sec/frontend/modules/bbii/controllers/ForumController.php:90
+Stack trace:
+#0 [internal function]: ForumController->actionForum('forum')
+#1 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ForumController), Array)
+#2 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ForumController), Object(ReflectionMethod), Array)
+#3 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#10 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('forum')
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/forum/for...')
+#13 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#15 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/forum/forum/id/forum
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/forum/forum/forum/id/13
+---
+2015/03/18 18:11:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested topic does not exist.' in /var/www/sec/frontend/modules/bbii/controllers/ForumController.php:142
+Stack trace:
+#0 [internal function]: ForumController->actionTopic('forum', NULL, NULL)
+#1 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ForumController), Array)
+#2 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ForumController), Object(ReflectionMethod), Array)
+#3 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#10 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('topic')
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/forum/top...')
+#13 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#15 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/forum/topic/id/forum
+HTTP_REFERER=http://192.168.1.11/sec/frontend/www/secsawiran/forum/forum/topic/id/11
+---
+2015/03/18 18:11:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested topic does not exist.' in /var/www/sec/frontend/modules/bbii/controllers/ForumController.php:142
+Stack trace:
+#0 [internal function]: ForumController->actionTopic('forum', NULL, NULL)
+#1 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ForumController), Array)
+#2 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ForumController), Object(ReflectionMethod), Array)
+#3 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#10 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('topic')
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/forum/top...')
+#13 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#15 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/forum/topic/id/forum
+HTTP_REFERER=http://192.168.1.11/sec/frontend/www/secsawiran/forum/forum/topic/id/forum
+---
+2015/03/18 18:22:42 [error] [php] Trying to get property of non-object (/var/www/sec/frontend/controllers/EventController.php:69)
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/sec/common/lib/yii/web/CController.php(286): EventController->runAction()
+#4 /var/www/sec/common/lib/yii/web/CController.php(265): EventController->runActionWithFilters()
+#5 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): EventController->run()
+#6 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/sec/frontend/www/secsawiran/index.php(19): CWebApplication->run()
+REQUEST_URI=/sec/frontend/www/secsawiran/event/forum
+in /var/www/sec/frontend/controllers/EventController.php (69)
+in /var/www/sec/frontend/controllers/EventController.php (43)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/03/18 18:36:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.html".' in /var/www/sec/common/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('index.html')
+#1 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/index.html
+---
+2015/03/18 18:51:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/3c01671a/img/ui-bg_glass_75_ffffff_1x400.png".' in /var/www/sec/common/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('assets/3c01671a...')
+#1 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/assets/3c01671a/img/ui-bg_glass_75_ffffff_1x400.png
+HTTP_REFERER=http://192.168.1.11/sec/frontend/www/secsawiran/assets/3c01671a/css/jquery-ui-bootstrap.css
+---
+2015/03/20 12:55:23 [error] ['Your user name does not found in our database'] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/04/01 18:08:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested topic does not exist.' in /var/www/sec/frontend/modules/bbii/controllers/ForumController.php:142
+Stack trace:
+#0 [internal function]: ForumController->actionTopic('forum', NULL, NULL)
+#1 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ForumController), Array)
+#2 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ForumController), Object(ReflectionMethod), Array)
+#3 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#10 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('topic')
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/forum/top...')
+#13 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#15 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/forum/topic/id/forum
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/forum/forum/topic/id/19
+---
+2015/04/01 18:21:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested topic does not exist.' in /var/www/sec/frontend/modules/bbii/controllers/ForumController.php:142
+Stack trace:
+#0 [internal function]: ForumController->actionTopic('forum', NULL, NULL)
+#1 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ForumController), Array)
+#2 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ForumController), Object(ReflectionMethod), Array)
+#3 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#10 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('topic')
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/forum/top...')
+#13 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#15 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/forum/topic/id/forum
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/forum/forum/topic/id/17
+---
+2015/04/01 18:26:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested topic does not exist.' in /var/www/sec/frontend/modules/bbii/controllers/ForumController.php:142
+Stack trace:
+#0 [internal function]: ForumController->actionTopic('forum', NULL, NULL)
+#1 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ForumController), Array)
+#2 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ForumController), Object(ReflectionMethod), Array)
+#3 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#10 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('topic')
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/forum/top...')
+#13 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#15 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/forum/topic/id/forum
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/forum/forum/topic/id/17
+---
+2015/04/01 18:26:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested topic does not exist.' in /var/www/sec/frontend/modules/bbii/controllers/ForumController.php:142
+Stack trace:
+#0 [internal function]: ForumController->actionTopic('forum', NULL, NULL)
+#1 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ForumController), Array)
+#2 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ForumController), Object(ReflectionMethod), Array)
+#3 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#10 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('topic')
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/forum/top...')
+#13 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#15 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/forum/topic/id/forum
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/forum/forum/topic/id/forum
+---
+2015/04/01 18:27:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested topic does not exist.' in /var/www/sec/frontend/modules/bbii/controllers/ForumController.php:142
+Stack trace:
+#0 [internal function]: ForumController->actionTopic('forum', NULL, NULL)
+#1 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ForumController), Array)
+#2 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ForumController), Object(ReflectionMethod), Array)
+#3 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#10 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('topic')
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/forum/top...')
+#13 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#15 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/forum/topic/id/forum
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/forum/forum/topic/id/forum
+---
+2015/04/07 09:12:10 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `bbii_message` `t` WHERE (inbox = 1) AND (inbox = 1 and read_indicator = 0 and sendto = ).
+in /var/www/sec/common/themes/frontend/sec/views/layouts/mainSingle.php (138)
+in /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php (40)
+in /var/www/sec/frontend/controllers/ArticleController.php (137)
+2015/04/07 09:12:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `bbii_message` `t` WHERE (inbox = 1) AND (inbox = 1 and read_indicator = 0 and sendto = )' in /var/www/sec/common/lib/yii/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 /var/www/sec/common/themes/frontend/sec/views/layouts/mainSingle.php(138): CActiveRecord->count('inbox = 1 and r...')
+#3 /var/www/sec/common/lib/yii/web/CBaseController.php(126): require('/var/www/sec/co...')
+#4 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/co...', Array, true)
+#5 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(ArticleController), '/var/www/sec/co...', Array, true)
+#6 /var/www/sec/common/lib/yii/web/CController.php(784): CBaseController->renderFile('/var/www/sec/co...', Array, true)
+#7 /var/www/sec/frontend/controllers/ArticleController.php(137): CController->render('viewBlog', Array)
+#8 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): ArticleController->actionViewBlog()
+#9 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/sec/common/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('viewBlog')
+#13 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('article/viewBlo...')
+#14 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#16 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/tisp-&-trick
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/forum
+---
+2015/04/07 09:12:32 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `bbii_message` `t` WHERE (inbox = 1) AND (inbox = 1 and read_indicator = 0 and sendto = ).
+in /var/www/sec/common/themes/frontend/sec/views/layouts/mainSingle.php (138)
+in /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php (40)
+in /var/www/sec/frontend/controllers/ArticleController.php (137)
+2015/04/07 09:12:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `bbii_message` `t` WHERE (inbox = 1) AND (inbox = 1 and read_indicator = 0 and sendto = )' in /var/www/sec/common/lib/yii/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 /var/www/sec/common/themes/frontend/sec/views/layouts/mainSingle.php(138): CActiveRecord->count('inbox = 1 and r...')
+#3 /var/www/sec/common/lib/yii/web/CBaseController.php(126): require('/var/www/sec/co...')
+#4 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/co...', Array, true)
+#5 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(ArticleController), '/var/www/sec/co...', Array, true)
+#6 /var/www/sec/common/lib/yii/web/CController.php(784): CBaseController->renderFile('/var/www/sec/co...', Array, true)
+#7 /var/www/sec/frontend/controllers/ArticleController.php(137): CController->render('viewBlog', Array)
+#8 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): ArticleController->actionViewBlog()
+#9 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/sec/common/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('viewBlog')
+#13 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('article/viewBlo...')
+#14 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#16 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/tisp-&-trick
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/forum
+---
+2015/04/07 09:35:00 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.article_category_id" is not defined.' in /var/www/sec/common/lib/yii/base/CComponent.php:173
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/schema/CDbCriteria.php(160): CComponent->__set('article_categor...', 5)
+#1 /var/www/sec/common/lib/yii/db/schema/CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(1455): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /var/www/sec/common/themes/frontend/sec/views/layouts/mainSingle2.php(106): CActiveRecord->find(Array)
+#4 /var/www/sec/common/lib/yii/web/CBaseController.php(126): require('/var/www/sec/co...')
+#5 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/co...', Array, true)
+#6 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(ArticleController), '/var/www/sec/co...', Array, true)
+#7 /var/www/sec/common/lib/yii/web/CController.php(784): CBaseController->renderFile('/var/www/sec/co...', Array, true)
+#8 /var/www/sec/frontend/controllers/ArticleController.php(59): CController->render('view', Array)
+#9 [internal function]: ArticleController->actionView('1')
+#10 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#11 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#12 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/sec/common/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('view')
+#16 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('article/view')
+#17 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#19 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/tisp-&-trick
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/forum
+---
+2015/04/10 16:06:12 [error] [exception.CException] exception 'CException' with message 'Property "BbiiMember.verifyCode" is not defined.' in /var/www/sec/common/lib/yii/base/CComponent.php:130
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(145): CComponent->__get('verifyCode')
+#1 /var/www/sec/common/lib/yii/web/helpers/CHtml.php(2529): CActiveRecord->__get('verifyCode')
+#2 /var/www/sec/common/lib/yii/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(BbiiMember), 'verifyCode')
+#3 /var/www/sec/common/lib/yii/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(BbiiMember), 'verifyCode', Array)
+#4 /var/www/sec/common/lib/yii/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(BbiiMember), 'verifyCode', Array)
+#5 /var/www/sec/common/themes/frontend/uc/views/layouts/main.php(269): CActiveForm->textField(Object(BbiiMember), 'verifyCode', Array, Array)
+#6 /var/www/sec/common/lib/yii/web/CBaseController.php(126): require('/var/www/sec/co...')
+#7 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/co...', Array, true)
+#8 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(ForumController), '/var/www/sec/co...', Array, true)
+#9 /var/www/sec/common/lib/yii/web/CController.php(784): CBaseController->renderFile('/var/www/sec/co...', Array, true)
+#10 /var/www/sec/frontend/modules/bbii/controllers/ForumController.php(64): CController->render('index', Array)
+#11 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): ForumController->actionIndex()
+#12 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#19 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('')
+#21 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum')
+#22 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/sec/frontend/www/seclaunch/index.php(21): CApplication->run()
+#24 {main}
+REQUEST_URI=/sec/frontend/www/seclaunch/forum
+HTTP_REFERER=http://localhost/sec/frontend/www/
+---
+2015/04/19 23:09:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/3.png".' in /var/www/sec/common/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/3.png')
+#1 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/images/3.png
+---
+2015/04/19 23:46:00 [error] [php] Trying to get property of non-object (/var/www/sec/frontend/modules/bbii/controllers/ForumController.php:50)
+Stack trace:
+#0 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): ForumController->runAction()
+#1 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/sec/common/lib/yii/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): ForumController->filterAccessControl()
+#4 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#6 /var/www/sec/common/lib/yii/web/CController.php(265): ForumController->runActionWithFilters()
+#7 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): ForumController->run()
+#8 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/sec/frontend/www/secsawiran/index.php(19): CWebApplication->run()
+REQUEST_URI=/sec/frontend/www/secsawiran/forum
+in /var/www/sec/frontend/modules/bbii/controllers/ForumController.php (50)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/24 21:31:32 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: SELECT * FROM `bbii_post` `t` WHERE title LIKE :match and . Bound with :match='%samsung%'.
+in /var/www/sec/frontend/controllers/TopicController.php (30)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/24 21:31:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: SELECT * FROM `bbii_post` `t` WHERE title LIKE :match and . Bound with :match='%samsung%'' in /var/www/sec/common/lib/yii/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/sec/frontend/controllers/TopicController.php(30): CActiveRecord->findAll('title LIKE :mat...', Array)
+#4 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): TopicController->actionCari()
+#5 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/sec/common/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('cari')
+#9 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('topic/cari')
+#10 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/topic/cari?cari=samsung
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/forum
+---
+2015/04/24 21:31:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'where clause'. The SQL statement executed was: SELECT * FROM `bbii_post` `t` WHERE title LIKE :match. Bound with :match='%samsung%'.
+in /var/www/sec/frontend/controllers/TopicController.php (30)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/24 21:31:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'where clause'. The SQL statement executed was: SELECT * FROM `bbii_post` `t` WHERE title LIKE :match. Bound with :match='%samsung%'' in /var/www/sec/common/lib/yii/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/sec/frontend/controllers/TopicController.php(30): CActiveRecord->findAll('title LIKE :mat...', Array)
+#4 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): TopicController->actionCari()
+#5 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/sec/common/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('cari')
+#9 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('topic/cari')
+#10 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/topic/cari?cari=samsung
+---
+2015/04/24 21:32:19 [error] [exception.CException] exception 'CException' with message 'Property "BbiiPost.starter" is not defined.' in /var/www/sec/common/lib/yii/base/CComponent.php:130
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(145): CComponent->__get('starter')
+#1 /var/www/sec/frontend/views/topic/cari.php(33): CActiveRecord->__get('starter')
+#2 /var/www/sec/common/lib/yii/web/CBaseController.php(126): require('/var/www/sec/fr...')
+#3 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/fr...', Array, true)
+#4 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(TopicController), '/var/www/sec/fr...', Array, true)
+#5 /var/www/sec/common/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/sec/fr...', Array, true)
+#6 /var/www/sec/common/lib/yii/web/CController.php(782): CController->renderPartial('cari', Array, true)
+#7 /var/www/sec/frontend/controllers/TopicController.php(34): CController->render('cari', Array)
+#8 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): TopicController->actionCari()
+#9 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/sec/common/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('cari')
+#13 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('topic/cari')
+#14 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#16 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/topic/cari?cari=samsung
+---
+2015/04/24 21:35:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'where clause'. The SQL statement executed was: SELECT * FROM `bbii_post` `t` WHERE title LIKE :match. Bound with :match='%samsung%'.
+in /var/www/sec/frontend/controllers/TopicController.php (30)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/24 21:35:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'where clause'. The SQL statement executed was: SELECT * FROM `bbii_post` `t` WHERE title LIKE :match. Bound with :match='%samsung%'' in /var/www/sec/common/lib/yii/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/sec/frontend/controllers/TopicController.php(30): CActiveRecord->findAll('title LIKE :mat...', Array)
+#4 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): TopicController->actionCari()
+#5 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/sec/common/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('cari')
+#9 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('topic/cari')
+#10 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/topic/cari?cari=samsung
+---
+2015/04/24 21:40:53 [error] [exception.CException] exception 'CException' with message 'Property "BbiiPost.firstPost" is not defined.' in /var/www/sec/common/lib/yii/base/CComponent.php:130
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(145): CComponent->__get('firstPost')
+#1 /var/www/sec/frontend/views/topic/cari.php(34): CActiveRecord->__get('firstPost')
+#2 /var/www/sec/common/lib/yii/web/CBaseController.php(126): require('/var/www/sec/fr...')
+#3 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/fr...', Array, true)
+#4 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(TopicController), '/var/www/sec/fr...', Array, true)
+#5 /var/www/sec/common/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/sec/fr...', Array, true)
+#6 /var/www/sec/common/lib/yii/web/CController.php(782): CController->renderPartial('cari', Array, true)
+#7 /var/www/sec/frontend/controllers/TopicController.php(34): CController->render('cari', Array)
+#8 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): TopicController->actionCari()
+#9 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/sec/common/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('cari')
+#13 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('topic/cari')
+#14 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#16 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/topic/cari?cari=samsung
+---
+2015/04/24 21:41:25 [error] [exception.CException] exception 'CException' with message 'Property "BbiiPost.sticky" is not defined.' in /var/www/sec/common/lib/yii/base/CComponent.php:130
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(145): CComponent->__get('sticky')
+#1 /var/www/sec/frontend/views/topic/cari.php(38): CActiveRecord->__get('sticky')
+#2 /var/www/sec/common/lib/yii/web/CBaseController.php(126): require('/var/www/sec/fr...')
+#3 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/fr...', Array, true)
+#4 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(TopicController), '/var/www/sec/fr...', Array, true)
+#5 /var/www/sec/common/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/sec/fr...', Array, true)
+#6 /var/www/sec/common/lib/yii/web/CController.php(782): CController->renderPartial('cari', Array, true)
+#7 /var/www/sec/frontend/controllers/TopicController.php(34): CController->render('cari', Array)
+#8 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): TopicController->actionCari()
+#9 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/sec/common/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('cari')
+#13 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('topic/cari')
+#14 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#16 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/topic/cari?cari=samsung
+---
+2015/04/24 21:42:03 [error] [exception.CException] exception 'CException' with message 'Property "BbiiPost.title" is not defined.' in /var/www/sec/common/lib/yii/base/CComponent.php:130
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(145): CComponent->__get('title')
+#1 /var/www/sec/frontend/views/topic/cari.php(42): CActiveRecord->__get('title')
+#2 /var/www/sec/common/lib/yii/web/CBaseController.php(126): require('/var/www/sec/fr...')
+#3 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/fr...', Array, true)
+#4 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(TopicController), '/var/www/sec/fr...', Array, true)
+#5 /var/www/sec/common/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/sec/fr...', Array, true)
+#6 /var/www/sec/common/lib/yii/web/CController.php(782): CController->renderPartial('cari', Array, true)
+#7 /var/www/sec/frontend/controllers/TopicController.php(34): CController->render('cari', Array)
+#8 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): TopicController->actionCari()
+#9 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/sec/common/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('cari')
+#13 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('topic/cari')
+#14 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#16 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/topic/cari?cari=samsung
+---
+2015/04/24 21:42:25 [error] [exception.CException] exception 'CException' with message 'Property "BbiiPost.num_replies" is not defined.' in /var/www/sec/common/lib/yii/base/CComponent.php:130
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(145): CComponent->__get('num_replies')
+#1 /var/www/sec/frontend/views/topic/cari.php(63): CActiveRecord->__get('num_replies')
+#2 /var/www/sec/common/lib/yii/web/CBaseController.php(126): require('/var/www/sec/fr...')
+#3 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/fr...', Array, true)
+#4 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(TopicController), '/var/www/sec/fr...', Array, true)
+#5 /var/www/sec/common/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/sec/fr...', Array, true)
+#6 /var/www/sec/common/lib/yii/web/CController.php(782): CController->renderPartial('cari', Array, true)
+#7 /var/www/sec/frontend/controllers/TopicController.php(34): CController->render('cari', Array)
+#8 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): TopicController->actionCari()
+#9 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/sec/common/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('cari')
+#13 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('topic/cari')
+#14 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#16 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/topic/cari?cari=samsung
+---
+2015/04/24 21:47:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested topic does not exist.' in /var/www/sec/frontend/modules/bbii/controllers/ForumController.php:142
+Stack trace:
+#0 [internal function]: ForumController->actionTopic('45', NULL, NULL)
+#1 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ForumController), Array)
+#2 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ForumController), Object(ReflectionMethod), Array)
+#3 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#10 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('topic')
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/forum/top...')
+#13 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#15 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/forum/topic/id/45
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/topic/cari?cari=savana
+---
+2015/04/24 21:47:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested topic does not exist.' in /var/www/sec/frontend/modules/bbii/controllers/ForumController.php:142
+Stack trace:
+#0 [internal function]: ForumController->actionTopic('47', NULL, NULL)
+#1 /var/www/sec/common/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ForumController), Array)
+#2 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ForumController), Object(ReflectionMethod), Array)
+#3 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#10 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('topic')
+#12 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum/forum/top...')
+#13 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#15 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum/forum/topic/id/47
+HTTP_REFERER=http://localhost/sec/frontend/www/secsawiran/topic/cari?cari=savana
+---
+2015/04/24 21:59:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'landa_cms_secsawiran.acca_bbii_post' doesn't exist. The SQL statement executed was: SELECT *
+FROM `acca_bbii_post`
+WHERE subject LIKE "%:substr%" OR content LIKE "%:substr%". Bound with :substr='name'.
+in /var/www/sec/frontend/controllers/TopicController.php (32)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/24 21:59:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'landa_cms_secsawiran.acca_bbii_post' doesn't exist. The SQL statement executed was: SELECT *
+FROM `acca_bbii_post`
+WHERE subject LIKE "%:substr%" OR content LIKE "%:substr%". Bound with :substr='name'' in /var/www/sec/common/lib/yii/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/sec/frontend/controllers/TopicController.php(32): CDbCommand->queryAll()
+#2 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): TopicController->actionCari()
+#3 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/sec/common/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('cari')
+#7 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('topic/cari')
+#8 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#10 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/topic/cari?cari=bromo
+---
+2015/04/24 22:14:33 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.csondition" is not defined.' in /var/www/sec/common/lib/yii/base/CComponent.php:173
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/schema/CDbCriteria.php(160): CComponent->__set('csondition', 'forum_id=13')
+#1 /var/www/sec/common/lib/yii/db/schema/CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(1469): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /var/www/sec/frontend/modules/bbii/views/forum/_forum.php(54): CActiveRecord->findAll(Array)
+#4 /var/www/sec/common/lib/yii/web/CBaseController.php(130): require('/var/www/sec/fr...')
+#5 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/fr...', Array, false)
+#6 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(ForumController), '/var/www/sec/fr...', Array, false)
+#7 /var/www/sec/common/lib/yii/zii/widgets/CListView.php(291): CBaseController->renderFile('/var/www/sec/fr...', Array)
+#8 /var/www/sec/common/lib/yii/zii/widgets/CBaseListView.php(167): CListView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 /var/www/sec/common/lib/yii/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#11 /var/www/sec/common/lib/yii/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#12 /var/www/sec/common/lib/yii/web/CBaseController.php(173): CBaseListView->run()
+#13 /var/www/sec/frontend/modules/bbii/views/forum/index.php(44): CBaseController->widget('zii.widgets.CLi...', Array)
+#14 /var/www/sec/common/lib/yii/web/CBaseController.php(126): require('/var/www/sec/fr...')
+#15 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/fr...', Array, true)
+#16 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(ForumController), '/var/www/sec/fr...', Array, true)
+#17 /var/www/sec/common/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/sec/fr...', Array, true)
+#18 /var/www/sec/common/lib/yii/web/CController.php(782): CController->renderPartial('index', Array, true)
+#19 /var/www/sec/frontend/modules/bbii/controllers/ForumController.php(64): CController->render('index', Array)
+#20 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): ForumController->actionIndex()
+#21 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#28 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('')
+#30 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum')
+#31 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#33 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum
+---
+2015/04/24 22:22:31 [error] [exception.CException] exception 'CException' with message 'Property "BbiiTopic.create_time" is not defined.' in /var/www/sec/common/lib/yii/base/CComponent.php:130
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(145): CComponent->__get('create_time')
+#1 /var/www/sec/frontend/modules/bbii/views/forum/_forum.php(83): CActiveRecord->__get('create_time')
+#2 /var/www/sec/common/lib/yii/web/CBaseController.php(130): require('/var/www/sec/fr...')
+#3 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/fr...', Array, false)
+#4 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(ForumController), '/var/www/sec/fr...', Array, false)
+#5 /var/www/sec/common/lib/yii/zii/widgets/CListView.php(291): CBaseController->renderFile('/var/www/sec/fr...', Array)
+#6 /var/www/sec/common/lib/yii/zii/widgets/CBaseListView.php(167): CListView->renderItems()
+#7 [internal function]: CBaseListView->renderSection(Array)
+#8 /var/www/sec/common/lib/yii/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#9 /var/www/sec/common/lib/yii/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#10 /var/www/sec/common/lib/yii/web/CBaseController.php(173): CBaseListView->run()
+#11 /var/www/sec/frontend/modules/bbii/views/forum/index.php(44): CBaseController->widget('zii.widgets.CLi...', Array)
+#12 /var/www/sec/common/lib/yii/web/CBaseController.php(126): require('/var/www/sec/fr...')
+#13 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/fr...', Array, true)
+#14 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(ForumController), '/var/www/sec/fr...', Array, true)
+#15 /var/www/sec/common/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/sec/fr...', Array, true)
+#16 /var/www/sec/common/lib/yii/web/CController.php(782): CController->renderPartial('index', Array, true)
+#17 /var/www/sec/frontend/modules/bbii/controllers/ForumController.php(64): CController->render('index', Array)
+#18 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): ForumController->actionIndex()
+#19 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#20 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#21 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#22 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#23 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#25 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#26 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('')
+#28 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum')
+#29 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#30 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#31 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum
+---
+2015/04/24 22:29:43 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.topic_id" is not defined.' in /var/www/sec/common/lib/yii/base/CComponent.php:173
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/schema/CDbCriteria.php(160): CComponent->__set('topic_id', '11')
+#1 /var/www/sec/common/lib/yii/db/schema/CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(1455): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /var/www/sec/frontend/modules/bbii/views/forum/_forum.php(80): CActiveRecord->find(Array)
+#4 /var/www/sec/common/lib/yii/web/CBaseController.php(130): require('/var/www/sec/fr...')
+#5 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/fr...', Array, false)
+#6 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(ForumController), '/var/www/sec/fr...', Array, false)
+#7 /var/www/sec/common/lib/yii/zii/widgets/CListView.php(291): CBaseController->renderFile('/var/www/sec/fr...', Array)
+#8 /var/www/sec/common/lib/yii/zii/widgets/CBaseListView.php(167): CListView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 /var/www/sec/common/lib/yii/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#11 /var/www/sec/common/lib/yii/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#12 /var/www/sec/common/lib/yii/web/CBaseController.php(173): CBaseListView->run()
+#13 /var/www/sec/frontend/modules/bbii/views/forum/index.php(44): CBaseController->widget('zii.widgets.CLi...', Array)
+#14 /var/www/sec/common/lib/yii/web/CBaseController.php(126): require('/var/www/sec/fr...')
+#15 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/fr...', Array, true)
+#16 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(ForumController), '/var/www/sec/fr...', Array, true)
+#17 /var/www/sec/common/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/sec/fr...', Array, true)
+#18 /var/www/sec/common/lib/yii/web/CController.php(782): CController->renderPartial('index', Array, true)
+#19 /var/www/sec/frontend/modules/bbii/controllers/ForumController.php(64): CController->render('index', Array)
+#20 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): ForumController->actionIndex()
+#21 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#28 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('')
+#30 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum')
+#31 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#33 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum
+---
+2015/04/25 08:17:24 [error] [0] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/04/25 08:17:49 [warning] [application] Failed to set unsafe attribute "avatar" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (38)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:18:20 [warning] [application] Failed to set unsafe attribute "avatar" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (38)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:18:35 [warning] [application] Failed to set unsafe attribute "avatar" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (38)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:22:02 [warning] [application] Failed to set unsafe attribute "email" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:22:02 [warning] [application] Failed to set unsafe attribute "pin" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:22:02 [warning] [application] Failed to set unsafe attribute "city_id" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:22:02 [warning] [application] Failed to set unsafe attribute "birthdate" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:22:02 [warning] [application] Failed to set unsafe attribute "address" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:22:02 [warning] [application] Failed to set unsafe attribute "avatar" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:22:02 [error] [''] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (49)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:23:31 [warning] [application] Failed to set unsafe attribute "email" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:23:31 [warning] [application] Failed to set unsafe attribute "pin" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:23:31 [warning] [application] Failed to set unsafe attribute "city_id" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:23:31 [warning] [application] Failed to set unsafe attribute "birthdate" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:23:31 [warning] [application] Failed to set unsafe attribute "address" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:23:31 [warning] [application] Failed to set unsafe attribute "avatar" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:23:31 [error] [''] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (49)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:25:54 [warning] [application] Failed to set unsafe attribute "email" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:25:54 [warning] [application] Failed to set unsafe attribute "pin" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:25:54 [warning] [application] Failed to set unsafe attribute "city_id" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:25:54 [warning] [application] Failed to set unsafe attribute "birthdate" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:25:54 [warning] [application] Failed to set unsafe attribute "address" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:25:54 [warning] [application] Failed to set unsafe attribute "avatar" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/25 08:25:54 [error] [''] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (49)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:09:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column '122267800' in 'order clause'. The SQL statement executed was: SELECT * FROM `bbii_topic` `t` ORDER BY 122267800 LIMIT 6.
+in /var/www/sec/common/themes/frontend/sec/views/layouts/main.php (236)
+in /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php (40)
+in /var/www/sec/frontend/modules/bbii/controllers/ForumController.php (64)
+2015/04/30 00:09:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column '122267800' in 'order clause'. The SQL statement executed was: SELECT * FROM `bbii_topic` `t` ORDER BY 122267800 LIMIT 6' in /var/www/sec/common/lib/yii/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/sec/common/lib/yii/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 /var/www/sec/common/lib/yii/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/sec/common/themes/frontend/sec/views/layouts/main.php(236): CActiveRecord->findAll(Array)
+#4 /var/www/sec/common/lib/yii/web/CBaseController.php(126): require('/var/www/sec/co...')
+#5 /var/www/sec/common/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/sec/co...', Array, true)
+#6 /var/www/sec/common/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(ForumController), '/var/www/sec/co...', Array, true)
+#7 /var/www/sec/common/lib/yii/web/CController.php(784): CBaseController->renderFile('/var/www/sec/co...', Array, true)
+#8 /var/www/sec/frontend/modules/bbii/controllers/ForumController.php(64): CController->render('index', Array)
+#9 /var/www/sec/common/lib/yii/web/actions/CInlineAction.php(49): ForumController->actionIndex()
+#10 /var/www/sec/common/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /var/www/sec/common/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/sec/common/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /var/www/sec/common/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /var/www/sec/common/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /var/www/sec/common/lib/yii/web/CController.php(291): CFilterChain->run()
+#17 /var/www/sec/common/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/sec/common/lib/yii/web/CWebApplication.php(282): CController->run('')
+#19 /var/www/sec/common/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('forum')
+#20 /var/www/sec/common/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/sec/frontend/www/secsawiran/index.php(19): CApplication->run()
+#22 {main}
+REQUEST_URI=/sec/frontend/www/secsawiran/forum
+---
+2015/04/30 00:25:10 [error] [0] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/common/components/UserIdentity.php (188)
+in /var/www/sec/common/models/LoginForm.php (54)
+2015/04/30 00:33:04 [warning] [application] Failed to set unsafe attribute "email" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:33:04 [warning] [application] Failed to set unsafe attribute "pin" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:33:04 [warning] [application] Failed to set unsafe attribute "city_id" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:33:04 [warning] [application] Failed to set unsafe attribute "birthdate" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:33:04 [warning] [application] Failed to set unsafe attribute "address" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:33:04 [warning] [application] Failed to set unsafe attribute "avatar" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:33:04 [error] [''] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (49)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:33:36 [warning] [application] Failed to set unsafe attribute "email" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:33:36 [warning] [application] Failed to set unsafe attribute "pin" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:33:36 [warning] [application] Failed to set unsafe attribute "city_id" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:33:36 [warning] [application] Failed to set unsafe attribute "birthdate" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:33:36 [warning] [application] Failed to set unsafe attribute "address" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:33:36 [warning] [application] Failed to set unsafe attribute "avatar" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:33:36 [error] [''] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (49)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:34:15 [warning] [application] Failed to set unsafe attribute "email" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:34:15 [warning] [application] Failed to set unsafe attribute "pin" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:34:15 [warning] [application] Failed to set unsafe attribute "city_id" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:34:15 [warning] [application] Failed to set unsafe attribute "birthdate" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:34:15 [warning] [application] Failed to set unsafe attribute "address" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:34:15 [warning] [application] Failed to set unsafe attribute "avatar" of "BbiiMember".
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (48)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
+2015/04/30 00:34:15 [error] [''] Landa Var Dump
+in /var/www/sec/common/globals.php (6)
+in /var/www/sec/frontend/modules/bbii/controllers/MemberController.php (49)
+in /var/www/sec/frontend/www/secsawiran/index.php (19)
