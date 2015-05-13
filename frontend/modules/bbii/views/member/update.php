@@ -78,9 +78,9 @@ $this->bbii_breadcrumbs = array(
         <div id="yw1">
             <ul id="yw2" class="nav nav-tabs">
                 <li class="active"><a data-toggle="tab" href="#yw1_tab_1">Profil</a></li>
-                 <li class=""><a data-toggle="tab" href="#yw1_tab_3">Keterangan Usaha</a></li>
+                <li class=""><a data-toggle="tab" href="#yw1_tab_3">Keterangan Usaha</a></li>
                 <li class=""><a data-toggle="tab" href="#yw1_tab_2">Setting Akun</a></li>
-               
+
             </ul>
             <div class="tab-content">
                 <div id="yw1_tab_1" class="tab-pane fade active in" style='padding:20px;'>
@@ -91,7 +91,7 @@ $this->bbii_breadcrumbs = array(
                     <?php echo $form->textFieldRow($model, 'username', array('maxlength' => 255, 'class' => 'span5')); ?>
                     <?php
                     $model->password = "";
-                    echo $form->passwordFieldRow($model, 'password', array('maxlength' => 255, 'class' => 'span4','placeholder'=>'Kosongi jika tidak ada perubahan'));
+                    echo $form->passwordFieldRow($model, 'password', array('maxlength' => 255, 'class' => 'span4', 'placeholder' => 'Kosongi jika tidak ada perubahan'));
                     ?>
                     <?php echo $form->dropDownListRow($model, 'gender', array('' => '', '0' => Yii::t('BbiiModule.bbii', 'Laki'), '1' => Yii::t('BbiiModule.bbii', 'Perempuan')), array('class' => 'span4')); ?>
                     <?php echo $form->textFieldRow($model, 'email', array('maxlength' => 255, 'class' => 'span5')); ?>
@@ -144,11 +144,28 @@ $this->bbii_breadcrumbs = array(
 //                    );
                     ?>
 
-                    <?php echo $form->textAreaRow($model, 'address', array('maxlength' => 255, 'class' => 'span8','rows'=>5,'cols'=>8)); ?>
+                    <?php echo $form->textAreaRow($model, 'address', array('maxlength' => 255, 'class' => 'span8', 'rows' => 5, 'cols' => 8)); ?>
                     <?php // echo $form->textAreaRow($model, 'signature', array('maxlength' => 255, 'class' => 'span8','rows'=>5,'cols'=>8)); ?>
                 </div>
                 <div id="yw1_tab_3" class="tab-pane fade" style='padding:20px;'>
-                    <?php echo $form->ckEditorRow($model, 'signature', array('label'=>false,'options' => array('fullpage' => 'js:true', 'filebrowserBrowseUrl' => $this->createUrl("fileManager/indexBlank")))); ?>
+                    <?php echo $form->ckEditorRow($model, 'signature', array('label' => false, 'options' => array('fullpage' => 'js:true', 'filebrowserBrowseUrl' => $this->createUrl("fileManager/indexBlank")))); ?>
+                      
+
+                    <div class="control-group">
+                        <label class="control-label">Image</label>
+                        <div class="controls">
+                            <img align="left" style="" src="<?php echo $model->imgUrlUsaha['small'] ?>" alt="avatar"><br>
+
+                            <?php // echo $form->fileFieldRow($model, 'avatar', array('class' => 'span3','label'=>false));  ?>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label"></label>
+                        <div class="controls">
+                            <span style="font-size:11px"><i>Ukuran file usaha yang bisa diupload maksimum 500 KB.</i></span>
+                            <?php echo $form->fileFieldRow($model, 'image_usaha', array('class' => 'span3', 'label' => false)); ?>
+                        </div>
+                    </div>
                 </div>
                 <div id="yw1_tab_2" class="tab-pane fade" style='padding:20px;'>
                     <?php echo $form->toggleButtonRow($model, 'show_online'); ?>
@@ -161,20 +178,20 @@ $this->bbii_breadcrumbs = array(
                         <label class="control-label">Avatar</label>
                         <div class="controls">
                             <img align="left" style="" src="<?php echo $model->imgUrl['small'] ?>" alt="avatar"><br>
-                            
-                           <?php // echo $form->fileFieldRow($model, 'avatar', array('class' => 'span3','label'=>false)); ?>
+
+                            <?php // echo $form->fileFieldRow($model, 'avatar', array('class' => 'span3','label'=>false));  ?>
                         </div>
                     </div>
                     <div class="control-group">
                         <label class="control-label"></label>
                         <div class="controls">
                             <span style="font-size:11px"><i>Ukuran file avatar yang bisa diupload maksimum 500 KB.</i></span>
-                           <?php echo $form->fileFieldRow($model, 'avatar', array('class' => 'span3','label'=>false)); ?>
+                            <?php echo $form->fileFieldRow($model, 'avatar', array('class' => 'span3', 'label' => false)); ?>
                         </div>
                     </div>
 
                 </div>
-                </div>
+            </div>
         </div>
         <div class="form-actions">
             <?php

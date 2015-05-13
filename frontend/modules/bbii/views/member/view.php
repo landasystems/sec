@@ -160,12 +160,15 @@ foreach (Yii::app()->user->getFlashes() as $key => $message) {
                     </div>
                 </div>
                 <div id="keterangan" class="tab-pane fade" style='padding:20px;'>
+                    <center><img align="left" style="" src="<?php echo $model->imgUrlUsaha['medium'] ?>" alt="avatar"></center>
                     <div class="control-group">
                                 <label class="control-label" style='text-align: left; font-weight: bold'></label>
                                 <div class="controls" style='padding-top: 5px;'>
                                     <?php echo $model->signature; ?>
+                                     
                                 </div>
                             </div>
+                    
                 </div>
                 <div id="topic" class="tab-pane fade" style='padding:20px;'>
                     <div class='span12'>

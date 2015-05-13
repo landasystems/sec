@@ -44,6 +44,7 @@ class MemberController extends BbiiController {
         $model = $this->loadModel($id);
         $tempPass = $model->password;
         $tempAvatar = $model->avatar;
+        $tempImageUsaha = $model->image_usaha;
         if (isset($_POST['BbiiMember'])) {
             $model->attributes = $_POST['BbiiMember'];
             logs($_POST['BbiiMember']['avatar']);
@@ -62,12 +63,23 @@ class MemberController extends BbiiController {
                 $model->password = $tempPass;
             }
             $file = CUploadedFile::getInstance($model, 'avatar');
+            $file2 = CUploadedFile::getInstance($model, 'image_usaha');
+            // avatar upload
             if (isset($_POST['BbiiMember']['avatar'])) {
 
                 if (is_object($file)) {
                     $model->avatar = Yii::app()->landa->urlParsing($model->member_name) . '.' . $file->extensionName;
                     $file->saveAs(param('pathImg') . 'avatar/' . $model->avatar);
                     Yii::app()->landa->createImg('avatar/', $model->avatar, $model->id);
+                }
+            }
+            // image ket usaha
+            if (isset($_POST['BbiiMember']['image_usaha'])) {
+
+                if (is_object($file2)) {
+                    $model->image_usaha = Yii::app()->landa->urlParsing($model->member_name) . '.' . $file->extensionName;
+                    $file2->saveAs(param('pathImg') . 'usaha/' . $model->image_usaha);
+                    Yii::app()->landa->createImg('usaha/', $model->image_usaha, $model->id);
                 }
             }
 
