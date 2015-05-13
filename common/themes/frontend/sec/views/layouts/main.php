@@ -58,7 +58,23 @@
 
                                         <!-- Carousel items -->
                                         <div class="carousel-inner">
-                                            <div class="item active">
+                                            <?php
+                                            $slider = SlideShow::model()->findAll(array('condition'=>'status=1'));
+                                            $no=0;
+                                            foreach($slider as $data){
+                                                $berita = Article::model()->findByPk($data->article_id);
+                                                $no++;
+                                                $active = ($no == 1) ?  'active' :'';
+                                                echo'<div class="item '.$active.'">
+                                               <img src="'.param('urlImg').'slider/'.$data->image.'" alt="" />
+                                                <div class="carousel-caption">
+                                                    <a href="'.$berita->url.'"><h3>'.$data->title.'</h3></a>
+                                                    <p>'.$data->description.'</p>
+                                                </div>
+                                            </div>';
+                                            }
+                                            ?>
+<!--                                            <div class="item active">
                                                 <img src="<?php echo param('urlImg') ?>file/slider/1.jpg" alt="" />
                                                 <div class="carousel-caption">
                                                     <h3>Sawiran Enterpreneur Community persembahan dari CU Sawiran</h3>
@@ -85,7 +101,7 @@
                                                         Biasakan anak untuk rajin menabung, dengan menggunakan SIBUHAR dari CU Sawiran. Dapatkan kemudahan fasilitas untuk membuat anak rajin menabung. Customer service lebih lanjut hub : (0341) 477 777
                                                     </p>
                                                 </div>
-                                            </div>
+                                            </div>-->
                                         </div>
                                         <!-- Carousel nav -->
                                         <a class="carousel-control left" href="#myCarousel" data-slide="prev" style="background: none;border: none"><img src="<?php echo bt('images/prev2.png') ?>"></a>

@@ -81,10 +81,10 @@ class BbiiMember extends CActiveRecord {
             array('timezone', 'default', 'value' => 'Asia/Jakarta'),
             array('signature', 'filter', 'filter' => array($obj = new CHtmlPurifier(), 'purify')),
             array('signature, first_visit, last_visit', 'safe'),
-             array('avatar', 'unsafe'),
+             array('avatar,image_usaha', 'unsafe'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, member_name,email, code, phone, city_id, address, type_business, company_name, pin, gender, location, personal_text, signature, avatar, show_online, contact_email, contact_pm, timezone, first_visit, last_visit, warning, posts, group_id, business_id, upvoted, blogger, facebook, flickr, google, linkedin, metacafe, myspace, orkut, tumblr, twitter, website, wordpress, yahoo, youtube, moderator', 'safe', 'on' => 'search'),
+            array('id, member_name,email, code, phone, city_id, address, type_business, company_name, pin, gender, location, personal_text, signature, avatar,image_usaha, show_online, contact_email, contact_pm, timezone, first_visit, last_visit, warning, posts, group_id, business_id, upvoted, blogger, facebook, flickr, google, linkedin, metacafe, myspace, orkut, tumblr, twitter, website, wordpress, yahoo, youtube, moderator', 'safe', 'on' => 'search'),
         );
     }
 
@@ -116,6 +116,7 @@ class BbiiMember extends CActiveRecord {
             'personal_text' => Yii::t('BbiiModule.bbii', 'Profile text'),
             'signature' => 'Keterangan Usaha',
             'avatar' => 'Avatar',
+            'image_usaha' => 'Ket Usaha',
             'show_online' => Yii::t('BbiiModule.bbii', 'Tampilkan saat Online'),
             'contact_email' => Yii::t('BbiiModule.bbii', 'Ijinkan user lain menghubungi melalui email'),
             'contact_pm' => Yii::t('BbiiModule.bbii', 'Ijinkan user lain menghubungi anda melalui pesan'),
@@ -229,6 +230,9 @@ class BbiiMember extends CActiveRecord {
 
     public function getImgUrl() {
         return landa()->urlImg('avatar/', $this->avatar, $this->id);
+    }
+    public function getImgUrlUsaha() {
+        return landa()->urlImg('usaha/', $this->image_usaha, $this->id);
     }
 
     public function getTagImg() {

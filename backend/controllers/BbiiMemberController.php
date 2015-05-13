@@ -57,13 +57,13 @@ class BbiiMemberController extends Controller {
         if (isset($_POST['id'])) {
             $id = $_POST['id'];
             if (isset($_POST['buttonmoderator'])) {
-                BbiiMember::model()->updateAll(array('moderator'=>1),'id IN (' . implode(',', $id) . ')');
+                BbiiMember::model()->updateAll(array('moderator' => 1), 'id IN (' . implode(',', $id) . ')');
 //                
 //                print_r($_POST['id']);
                 user()->setFlash('info', 'User is enabled to moderator now.');
                 $this->redirect(array('bbiiMember/index'));
             } else if (isset($_POST['buttondelmoderator'])) {
-                BbiiMember::model()->updateAll(array('moderator'=>0),'id IN (' . implode(',', $id) . ')');
+                BbiiMember::model()->updateAll(array('moderator' => 0), 'id IN (' . implode(',', $id) . ')');
                 user()->setFlash('info', 'User is disabled from moderator now.');
                 $this->redirect(array('bbiiMember/index'));
             } else {
@@ -117,8 +117,9 @@ class BbiiMemberController extends Controller {
             'model' => $model,
         ));
     }
-     public function actionRemovephoto($id) {
-        User::model()->updateByPk($id, array('avatar' => NULL));
+
+    public function actionRemovephoto($id) {
+        BbiiMember::model()->updateByPk($id, array('avatar' => NULL));
     }
 
     public function actionUpdate($id) {
@@ -178,8 +179,20 @@ class BbiiMemberController extends Controller {
     public function actionDelete($id) {
         if (Yii::app()->request->isPostRequest) {
             // we only allow deletion via POST request
-            $this->loadModel($id)->delete();
+            //cari id topic untuk delet di table post
+            $model = $this->loadModel($id);
+            $sTopic = array();
+            $topic = BbiiTopic::model()->findAll(array('condition' =>'user_id=' . $id));
+            foreach ($topic as $data) {
+                $sTopic[] = $data->id;
+            }
 
+            // delet di table post
+            cmd('DELETE FROM bbii_post WHERE topic_id IN (' . implode(',', $sTopic) . ')')->execute();
+            cmd('DELETE FROM bbii_topic WHERE user_id='.$id)->execute();
+            cmd('DELETE FROM bbii_poll WHERE user_id='.$id)->execute();
+
+            $model->delete();
             // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
             if (!isset($_GET['ajax']))
                 $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
