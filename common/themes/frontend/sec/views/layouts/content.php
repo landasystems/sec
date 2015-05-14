@@ -65,11 +65,14 @@
                 </div>
                 <div name="login-form" class="login-form">
                                     <div class="header2">
-                                        <div class="text">Ada pertanyaan ?</div>
-                                        <center>
-                                            <a href="ymsgr:sendIM?indomobilecell">
-                                                <img border="0" src="http://opi.yahoo.com/online?u=indomobilecell&amp;m=g&amp;t=14"></a>
-                                        </center>   
+                                        <div class="text">Online Messager</div>
+                                        <ul class="topic">
+                                            <li><img src="<?php echo param('urlImg') ?>file/ym.png" style="width: 12%;"> Yaho Messager <span style="float: right"> <a href="ymsgr:sendIM?secsawiran"><img src="http://opi.yahoo.com/online?u=secsawiran&m=g&t=1/"></a></span></li>
+                                            <li><img src="<?php echo param('urlImg') ?>file/wa.png" style="width: 12%;"> Whatsapp  <span style="font-weight: 100;float: right">085649543999</span> </li>
+                                            <li><img src="<?php echo param('urlImg') ?>file/bbm.png" style="width: 12%;"> BBM <span style="font-weight: 100;float: right">-</span></li>
+
+
+                                        </ul>  
                                     </div>
                                 </div><br>
 

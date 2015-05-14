@@ -160,7 +160,7 @@ class Auth extends CActiveRecord {
                
                
                 array('visible' => in_array('download', param('menu')) && landa()->checkAccess('Download', 'r'), 'label' => '<span class="icon16 minia-icon-download"></span>Download', 'url' => array('/downloadCategory'), 'auth_id' => 'Download'),
-                array('visible' => in_array('gallery', param('menu')) && landa()->checkAccess('Gallery', 'r'), 'label' => '<span class="icon16 entypo-icon-images"></span>Slide Show', 'url' => array('/slideShow'), 'auth_id' => 'Gallery'),
+                array('visible' => in_array('event', param('menu')) && landa()->checkAccess('Event', 'r'), 'label' => '<span class="icon16 entypo-icon-images"></span>Slide Show', 'url' => array('/slideShow'), 'auth_id' => 'Event'),
                 array('visible' => in_array('testimonial', param('menu')) && landa()->checkAccess('Testimonial', 'r'), 'label' => '<span class="icon16 brocco-icon-comment"></span>Testimonial', 'url' => array('/testimonial'), 'auth_id' => 'Testimonial'),
                 array('visible' => in_array('weblink', param('menu')) && landa()->checkAccess('Weblink', 'r'), 'label' => '<span class="icon16  icomoon-icon-link"></span>Weblink', 'url' => array('/weblink'), 'auth_id' => 'Weblink'),
                 array('visible' => in_array('ticket', param('menu')) && landa()->checkAccess('TicketCategory', 'r'), 'label' => '<span class="icon16  wpzoom-chat"></span>Ticket Category', 'url' => array('/ticketCategory'), 'auth_id' => 'TicketCategory'),

@@ -175,33 +175,6 @@ class SlideShowController extends Controller {
         $model = new SlideShow('search');
         $model->unsetAttributes();  // clear any default values
 
-        if (isset($_GET['SlideShow'])) {
-            $model->attributes = $_GET['SlideShow'];
-
-
-            if (!empty($model->id))
-                $criteria->addCondition('id = "' . $model->id . '"');
-
-
-            if (!empty($model->article_id))
-                $criteria->addCondition('article_id = "' . $model->article_id . '"');
-
-
-            if (!empty($model->title))
-                $criteria->addCondition('title = "' . $model->title . '"');
-
-
-            if (!empty($model->description))
-                $criteria->addCondition('description = "' . $model->description . '"');
-
-
-            if (!empty($model->image))
-                $criteria->addCondition('image = "' . $model->image . '"');
-
-
-            if (!empty($model->status))
-                $criteria->addCondition('status = "' . $model->status . '"');
-        }
 
         $this->render('index', array(
             'model' => $model,

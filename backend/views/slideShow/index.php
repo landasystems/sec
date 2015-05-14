@@ -29,7 +29,7 @@ $this->widget('bootstrap.widgets.TbMenu', array(
     'items' => array(
         array('label' => 'Tambah', 'icon' => 'icon-plus', 'url' => Yii::app()->controller->createUrl('create'), 'linkOptions' => array()),
         array('label' => 'List Data', 'icon' => 'icon-th-list', 'url' => Yii::app()->controller->createUrl('index'), 'active' => true, 'linkOptions' => array()),
-        array('label' => 'Pencarian', 'icon' => 'icon-search', 'url' => '#', 'linkOptions' => array('class' => 'search-button')),
+//        array('label' => 'Pencarian', 'icon' => 'icon-search', 'url' => '#', 'linkOptions' => array('class' => 'search-button')),
     ),
 ));
 $this->endWidget();
@@ -96,7 +96,7 @@ $this->widget('bootstrap.widgets.TbGridView', array(
                 'status' => array(
                     'label' => 'Publish',
                     'icon' => 'icon-ok',
-                    'url'=>'Yii::app()->controller->createUrl("slideShow/changeActive", array("id"=>$data[id]))',
+                    'url'=>'Yii::app()->controller->createUrl("slideShow/changeActive", array("id"=>$data->id))',
                     'visible' => '( $data->status==0)',
                     'options' => array(
                         'class' => 'btn btn-small update status',
@@ -106,7 +106,7 @@ $this->widget('bootstrap.widgets.TbGridView', array(
                 'off' => array(
                     'label' => 'Unpublish',
                     'icon' => 'icon-remove',
-                    'url'=>'Yii::app()->controller->createUrl("slideShow/changeOff", array("id"=>$data[id]))',
+                    'url'=>'Yii::app()->controller->createUrl("slideShow/changeOff", array("id"=>$data->id))',
                     'visible' => '( $data->status==1)',
                     'options' => array(
                         'class' => 'btn btn-small update status',
