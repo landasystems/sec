@@ -76,7 +76,6 @@
                                     </form>
 
                                 </div>
-                                <div class="gradient"></div>
 
                             </div>
                             

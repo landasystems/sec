@@ -123,7 +123,7 @@
                             <div class="span9">
 
                                 <?php echo $content ?>
-                                <article class="clearfix">
+                                <article class="clearfix img-polaroid">
                                     <?php
                                     /* @var $this ForumController */
                                     $present = BbiiSession::model()->present()->count();
@@ -233,11 +233,10 @@
                                         <?php $this->endWidget(); ?>
 
                                     </div>
-                                    <div class="gradient"></div>
 
                                 </div>
                                 <center>
-                                <img src="<?php echo param('urlImg') ?>file/iklan.png" class="img-responsive"/>
+                                <img src="<?php echo param('urlImg') ?>file/iklan.png" class="img-responsive" style="margin-bottom: 5px"/>
                                 </center>
                                 <div name="login-form" class="login-form">
                                     <div class="header2">

@@ -24,7 +24,7 @@ $item = array(
         padding-top: 0px;
     }
 </style>
-<div id="bbii-wrapper">
+<div id="bbii-wrapper" class="img-polaroid">
     <?php  ?>
 
     <?php

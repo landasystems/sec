@@ -249,7 +249,24 @@ class BbiiMemberController extends Controller {
     }
 
     public function actionKirim() {
-        Email::model()->send("yulianto@landa.co.id","Yulianto Frandi","yuliantofrandi@gmail.com", 'Reset Password @' . param('client'), "ini coba", FALSE);
+//        $name = 'Yulianto Frandisfds';
+//        $email = 'yulianto@landa.co.id';
+//        $subject = "Judul Judulan Pengiriman";
+//        $message = "WOoooooooooooooi kog gak masuk2 si";
+//
+//        $to = $email;
+//
+//        $message = "From:$name <br />" . $message;
+//
+//        $headers = "MIME-Version: 1.0" . "\r\n";
+//        $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
+//        $headers .= 'From: <info@sec.cusawiran.org>' . "\r\n";
+//        
+//        @mail($to, $subject, $message, $headers);
+//        if (@mail) {
+//            echo "Email sent successfully !!aaaaaaaaaaaaa";
+//        }
+//        Email::model()->sending("yulianto@landa.co.id","SEC CU Sawiran","info@sec.cusawiran.org", 'Reset Password - ' . param('client'), "kakakkaka");
     }
 
     public function actionSendEmail() {
@@ -328,8 +345,27 @@ class BbiiMemberController extends Controller {
         </tr>
     </tbody>
 </table>';
-                Email::model()->send($siteConfig->email, $_POST['email'], 'Reset Password @' . param('client'), $emailContent, FALSE);
-                user()->setFlash('success', 'You will receive an email with instructions on how to reset your password in a few minutes..');
+                //-----------function kirim email, melalui smtp
+                $to = $_POST['email'];
+                $fromEmail = "system@sec.cusawiran.org";
+                $from = "Mail System SEC";
+                $subject = "Reset Password SEC";
+                $message = $emailContent;
+
+                $mail = Yii::app()->Smtpmail;
+                $mail->SetFrom($fromEmail, $from);
+                $mail->Subject = $subject;
+//                $mail->MsgHTML('aaaaaaaaaaa<br/>abbbbbbbbbbb<b>sdfsdfs</');
+                $mail->MsgHTML($message);
+                $mail->AddAddress($to, "");
+                if (!$mail->Send()) {
+                    user()->setFlash('warning', "Mailer Error: " . $mail->ErrorInfo);
+                } else {
+                    user()->setFlash('success', 'Terima kasih. Mohon cek email anda beberapa saat lagi, untuk melanjutkan cara untuk mereset password login Anda.');
+                }
+                $mail->ClearAddresses();
+                //------------------------------------------------
+//                Email::model()->send($siteConfig->email, $_POST['email'], 'Reset Password @' . param('client'), $emailContent, FALSE);
                 $this->redirect(url('site/login'));
             }
         }

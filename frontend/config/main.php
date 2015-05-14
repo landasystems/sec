@@ -49,6 +49,15 @@ return array(
     ),
     // application components
     'components' => array(
+        'Smtpmail'=>array(
+            'class'=>'common.extensions.smtpmail.PHPMailer',
+            'Host'=>"103.27.206.203",
+            'Username'=>'system@sec.cusawiran.org',
+            'Password'=>'landak',
+            'Mailer'=>'smtp',
+            'Port'=>26,
+            'SMTPAuth'=>true, 
+        ),
         'db' => array(
             'connectionString' => 'mysql:host=localhost;dbname=' . $db,
             'emulatePrepare' => true,

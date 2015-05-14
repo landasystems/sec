@@ -167,7 +167,6 @@
                                         <?php $this->endWidget(); ?>
 
                                     </div>
-                                    <div class="gradient"></div>
 
                                 </div>
                                 <center>
