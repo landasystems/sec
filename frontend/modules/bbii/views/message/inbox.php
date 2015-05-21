@@ -33,7 +33,7 @@ $this->bbii_breadcrumbs = array(
        
     }
 </style>
-<div id="bbii-wrapper" class="well">
+<div id="bbii-wrapper" class="img-polaroid">
     <?php // echo $this->renderPartial('_header', array('item'=>$item)); ?>
 
 <!--<div class="progress"><div class="progressbar" style="width:<?php // echo ($count['inbox'] < 100)?$count['inbox']:100;  ?>%"> </div></div>-->

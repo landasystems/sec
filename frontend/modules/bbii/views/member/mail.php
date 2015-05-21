@@ -13,7 +13,7 @@ $item = array(
 	array('label'=>Yii::t('BbiiModule.bbii', 'Members'), 'url'=>array('member/index')),
 );
 ?>
-<div id="bbii-wrapper">
+<div id="bbii-wrapper" class="img-polaroid">
 	<?php echo $this->renderPartial('_header', array('item'=>$item)); ?>
 	
 	<div class="bbii-box-top"><?php echo Yii::t('BbiiModule.bbii', 'Send e-mail to') . ' ' . $model->member_name; ?></div>

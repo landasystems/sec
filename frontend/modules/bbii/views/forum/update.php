@@ -16,7 +16,7 @@ $item = array(
 	array('label'=>Yii::t('bbii', 'Members'), 'url'=>array('/forum/member/index'))
 );
 ?>
-<div id="bbii-wrapper">
+<div id="bbii-wrapper" class="img-polaroid">
 	<?php echo $this->renderPartial('_header', array('item'=>$item)); ?>
 	
 	<?php echo $this->renderPartial('_form', array('post'=>$post)); ?>

@@ -31,7 +31,7 @@ foreach (Yii::app()->user->getFlashes() as $key => $message) {
     }
 </style>
 
-<div id="bbii-wrapper" class="well">
+<div id="bbii-wrapper" class="img-polaroid">
 
 
 

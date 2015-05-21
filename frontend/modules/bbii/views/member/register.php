@@ -17,7 +17,7 @@ $item = array(
     array('label' => Yii::t('BbiiModule.bbii', 'Posts'), 'url' => array('moderator/admin'), 'visible' => $this->isModerator()),
 );
 ?>
-<div id="bbii-wrapper">
+<div id="bbii-wrapper" class="img-polaroid">
     <?php echo $this->renderPartial('_header', array('item' => $item)); ?>
 
     <div class="form" style='margin-top: 0px;'>

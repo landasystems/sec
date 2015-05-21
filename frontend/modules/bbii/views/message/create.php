@@ -14,7 +14,7 @@ $item = array(
     array('label' => Yii::t('BbiiModule.bbii', 'New message'), 'url' => array('message/create'))
 );
 ?>
-<div id="bbii-wrapper" class="well">
+<div id="bbii-wrapper" class="img-polaroid">
     <?php // echo $this->renderPartial('_header', array('item' => $item)); ?>
 
     <!--<div class="page-header" style="padding-bottom: 0px; margin-bottom: 20px;">-->

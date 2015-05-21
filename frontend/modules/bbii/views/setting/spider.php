@@ -19,7 +19,7 @@ Yii::app()->clientScript->registerScript('confirmation', "
 var confirmation = '" . Yii::t('BbiiModule.bbii', 'Are you sure that you want to delete this webspider?') . "'
 ", CClientScript::POS_BEGIN);
 ?>
-<div id="bbii-wrapper">
+<div id="bbii-wrapper" class="img-polaroid">
 	<?php echo $this->renderPartial('_header', array('item'=>$item)); ?>
 	
 	<?php echo CHtml::button(Yii::t('BbiiModule.bbii', 'New webspider'), array('onclick'=>'BBiiSetting.EditSpider()', 'class'=>'down35')); ?>

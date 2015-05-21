@@ -20,7 +20,7 @@ Yii::app()->clientScript->registerScript('confirmation', "
 var confirmation = '" . Yii::t('BbiiModule.bbii', 'Are you sure that you want to delete this member group?') . "'
 ", CClientScript::POS_BEGIN);
 ?>
-<div id="bbii-wrapper">
+<div id="bbii-wrapper" class="img-polaroid">
 	<?php echo $this->renderPartial('_header', array('item'=>$item)); ?>
 	
 	<?php echo CHtml::button(Yii::t('BbiiModule.bbii', 'New group'), array('onclick'=>'editMembergroup()', 'class'=>'down35')); ?>

@@ -22,7 +22,7 @@ $item = array(
 	array('label'=>Yii::t('BbiiModule.bbii', 'Blocked IP'), 'url'=>array('moderator/ipadmin'), 'visible'=>$this->isModerator()),
 );
 ?>
-<div class="row-fluid" id="bbii-wrapper">
+<div class="row-fluid img-polaroid" id="bbii-wrapper">
 	<?php echo $this->renderPartial('_header', array('item'=>$item)); ?>
 	
 	<?php $form=$this->beginWidget('CActiveForm', array(

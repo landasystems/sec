@@ -11,9 +11,8 @@
                                                 <li><a href="#profile">List Anggota</a></li>
                                                 <li><a href="#messages">Search</a></li>
                                             </ul>-->
-                <div class="well" style="padding: 15px;">
+                <div>
                     <?php echo $content ?>
-
                 </div>
             </div>
             <div class="span3" style="margin-top: 10px;">

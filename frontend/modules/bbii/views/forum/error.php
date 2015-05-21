@@ -13,7 +13,7 @@ $item = array(
 );
 ?>
 
-<div id="bbii-wrapper">
+<div id="bbii-wrapper" class="img-polaroid">
 	<?php echo $this->renderPartial('_header', array('item'=>$item)); ?>
 
 	<h2><?php echo Yii::t('BbiiModule.bbii', 'Error') . ' ' . $code; ?></h2>

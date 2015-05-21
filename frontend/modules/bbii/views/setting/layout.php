@@ -23,7 +23,7 @@ confirmation[0] = '" . Yii::t('BbiiModule.bbii', 'Are you sure that you want to 
 confirmation[1] = '" . Yii::t('BbiiModule.bbii', 'Are you sure that you want to delete this forum?') . "';
 ", CClientScript::POS_BEGIN);
 ?>
-<div id="bbii-wrapper">
+<div id="bbii-wrapper" class="img-polaroid">
 	<?php echo $this->renderPartial('_header', array('item'=>$item)); ?>
 	
 	<div class="bbii-box-top"><?php echo Yii::t('BbiiModule.bbii', 'Add category or forum'); ?></div>

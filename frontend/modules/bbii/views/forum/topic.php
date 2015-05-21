@@ -53,7 +53,7 @@ Yii::app()->clientScript->registerScript('scrollToPost', "
         padding-top: 0px;
     }
 </style>
-<div id="bbii-wrapper">
+<div id="bbii-wrapper" class="img-polaroid">
     <?php echo $this->renderPartial('_header', array('item' => $item)); ?>
 
     <div class="codo_topics_post_head">

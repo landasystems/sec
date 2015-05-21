@@ -16,7 +16,7 @@ $this->bbii_breadcrumbs = array(
         background: none ;
     }
 </style>
-<div id="bbii-wrapper" class="well">
+<div id="bbii-wrapper" class="img-polaroid">
     <?php // echo $this->renderPartial('_header', array('item'=>$item));  ?>
 
     <?php
