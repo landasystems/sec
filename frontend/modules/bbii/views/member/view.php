@@ -52,124 +52,122 @@ foreach (Yii::app()->user->getFlashes() as $key => $message) {
         <div id="yw1">
             <ul id="yw2" class="nav nav-tabs">
                 <li class="active"><a data-toggle="tab" href="#profile">Profile</a></li>
-                <li class=""><a data-toggle="tab" href="#keterangan">Keterangan Usaha</a></li>
                 <li class=""><a data-toggle="tab" href="#topic">Post</a></li>
-                
+
             </ul>
             <div class="tab-content">
                 <div id="profile" class="tab-pane fade active in" style='padding:20px;'>
-                    <div class='span2' align='center' style='padding: 0px; margin: 0px;'>
-                        <img src="<?php echo $model->imgUrl['small'] ?>" class="img-rounded">
+                    <div class="row-fluid">
+                        <div class='span2' align='center' style='padding: 0px; margin: 0px;'>
+                            <img src="<?php echo $model->imgUrl['small'] ?>" class="img-rounded">
 
-                        <strong><?php echo CHtml::encode($model->member_name); ?></strong><br>
-                        <?php  if($model->moderator == 1){ echo '<span class="label label-info">Moderator</span>';} ?>
-                    </div>
-                    <div class='span6'>
-                        <form class="form-horizontal">
-                            <div class="control-group">
-                                <label class="control-label" style='text-align: left; font-weight: bold'>Kategori Usaha</label>
-                                <div class="controls" style='padding-top: 5px;'>
-                                    <?php echo (isset($model->business->name) ? $model->business->name : 'Mohon di isi.') ?>
+                            <strong><?php echo CHtml::encode($model->member_name); ?></strong><br>
+                            <?php
+                            if ($model->moderator == 1) {
+                                echo '<span class="label label-info">Moderator</span>';
+                            }
+                            ?>
+                        </div>
+                        <div class='span6'>
+                            <form class="form-horizontal">
+                                <div class="control-group">
+                                    <label class="control-label" style='text-align: left; font-weight: bold'>Kategori Usaha</label>
+                                    <div class="controls" style='padding-top: 5px;'>
+                                        <?php echo (isset($model->business->name) ? $model->business->name : 'Mohon di isi.') ?>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label" style='text-align: left; font-weight: bold'>Type Usaha</label>
-                                <div class="controls" style='padding-top: 5px;'>
-                                    <?php echo $model->type_business; ?>
+                                <div class="control-group">
+                                    <label class="control-label" style='text-align: left; font-weight: bold'>Type Usaha</label>
+                                    <div class="controls" style='padding-top: 5px;'>
+                                        <?php echo $model->type_business; ?>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label" style='text-align: left; font-weight: bold'>Nama Usaha</label>
-                                <div class="controls" style='padding-top: 5px;'>
-                                    <?php echo $model->company_name; ?>
+                                <div class="control-group">
+                                    <label class="control-label" style='text-align: left; font-weight: bold'>Nama Usaha</label>
+                                    <div class="controls" style='padding-top: 5px;'>
+                                        <?php echo $model->company_name; ?>
+                                    </div>
                                 </div>
-                            </div>
 
+                                <div class="control-group">
+                                    <label class="control-label" style='text-align: left; font-weight: bold'>Phone</label>
+                                    <div class="controls" style='padding-top: 5px;'>
+                                        <?php if (isset($model->phone)) echo CHtml::encode($model->phone); ?>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" style='text-align: left; font-weight: bold'>Pin/whatsapp</label>
+                                    <div class="controls" style='padding-top: 5px;'>
+                                        <?php if (isset($model->phone)) echo CHtml::encode($model->pin); ?>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" style='text-align: left; font-weight: bold'>Kota/Kab</label>
+                                    <div class="controls" style='padding-top: 5px;'>
+                                        <?php echo (isset($model->city->name)) ? CHtml::encode($model->city->name) : Yii::t('BbiiModule.bbii', '-'); ?>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" style='text-align: left; font-weight: bold'><?php echo Yii::t('BbiiModule.bbii', 'Birthdate'); ?></label>
+                                    <div class="controls" style='padding-top: 5px;'>
+                                        <?php echo (isset($model->birthdate)) ? $df->formatDateTime($model->birthdate, 'long', null) : Yii::t('BbiiModule.bbii', 'Unknown'); ?>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" style='text-align: left; font-weight: bold'><?php echo Yii::t('BbiiModule.bbii', 'Gender'); ?></label>
+                                    <div class="controls" style='padding-top: 5px;'>
+                                        <?php echo (isset($model->gender)) ? (($model->gender) ? Yii::t('BbiiModule.bbii', 'Perempuan') : Yii::t('BbiiModule.bbii', 'Laki-laki')) : Yii::t('BbiiModule.bbii', '-'); ?>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" style='text-align: left; font-weight: bold'>Sosial / Website</label>
+                                    <div class="controls" style='padding-top: 5px;'>
+                                        <?php if ($model->contact_email && $this->module->userMailColumn) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('User.png'), 'e-mail', array('title' => Yii::t('BbiiModule.bbii', 'Contact user by e-mail'))), array('member/mail', 'id' => $model->id)); ?>
+                                        <?php if (isset($model->blogger)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Blogger.png'), 'Blogger', array('title' => 'Blogger', 'target' => '_blank')), $model->blogger); ?>
+                                        <?php if (isset($model->facebook)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Facebook.png'), 'Facebook', array('title' => 'Facebook', 'target' => '_blank')), $model->facebook); ?>
+                                        <?php if (isset($model->flickr)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Flickr.png'), 'Flickr', array('title' => 'Flickr', 'target' => '_blank')), $model->flickr); ?>
+                                        <?php if (isset($model->google)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Google.png'), 'Google', array('title' => 'Google', 'target' => '_blank')), $model->google); ?>
+                                        <?php if (isset($model->linkedin)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Linkedin.png'), 'Linkedin', array('title' => 'Linkedin', 'target' => '_blank')), $model->linkedin); ?>
+                                        <?php if (isset($model->metacafe)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Metacafe.png'), 'Metacafe', array('title' => 'Metacafe', 'target' => '_blank')), $model->metacafe); ?>
+                                        <?php if (isset($model->myspace)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Myspace.png'), 'Myspace', array('title' => 'Myspace', 'target' => '_blank')), $model->myspace); ?>
+                                        <?php if (isset($model->orkut)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Orkut.png'), 'Orkut', array('title' => 'Orkut', 'target' => '_blank')), $model->orkut); ?>
+                                        <?php if (isset($model->tumblr)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Tumblr.png'), 'Tumblr', array('title' => 'Tumblr', 'target' => '_blank')), $model->tumblr); ?>
+                                        <?php if (isset($model->twitter)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Twitter.png'), 'Twitter', array('title' => 'Twitter', 'target' => '_blank')), $model->twitter); ?>
+                                        <?php if (isset($model->website)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Globe.png'), 'Website', array('title' => 'Website', 'target' => '_blank')), $model->website); ?>
+                                        <?php if (isset($model->wordpress)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Wordpress.png'), 'Wordpress', array('title' => 'Wordpress', 'target' => '_blank')), $model->wordpress); ?>
+                                        <?php if (isset($model->yahoo)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Yahoo.png'), 'Yahoo', array('title' => 'Yahoo', 'target' => '_blank')), $model->yahoo); ?>
+                                        <?php if (isset($model->youtube)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Youtube.png'), 'Youtube', array('title' => 'Youtube', 'target' => '_blank')), $model->youtube); ?>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" style='text-align: left; font-weight: bold'>Alamat</label>
+                                    <div class="controls" style='padding-top: 5px;'>
+                                        <?php echo CHtml::encode($model->address); ?>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="span4">
                             <div class="control-group">
-                                <label class="control-label" style='text-align: left; font-weight: bold'>Phone</label>
+                                <label class="control-label" style='text-align: left; font-weight: bold'><?php echo Yii::t('BbiiModule.bbii', 'Number of posts'); ?></label>
                                 <div class="controls" style='padding-top: 5px;'>
-                                    <?php if (isset($model->phone)) echo CHtml::encode($model->phone); ?>
+                                    <?php echo CHtml::encode($model->posts); ?>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label" style='text-align: left; font-weight: bold'>Pin/whatsapp</label>
+                                <label class="control-label" style='text-align: left; font-weight: bold'><?php echo Yii::t('BbiiModule.bbii', 'Reputation'); ?></label>
                                 <div class="controls" style='padding-top: 5px;'>
-                                    <?php if (isset($model->phone)) echo CHtml::encode($model->pin); ?>
+                                    <?php echo CHtml::encode($model->upvoted); ?>
                                 </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label" style='text-align: left; font-weight: bold'>Kota/Kab</label>
-                                <div class="controls" style='padding-top: 5px;'>
-                                    <?php echo (isset($model->city->name)) ? CHtml::encode($model->city->name) : Yii::t('BbiiModule.bbii', '-'); ?>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label" style='text-align: left; font-weight: bold'><?php echo Yii::t('BbiiModule.bbii', 'Birthdate'); ?></label>
-                                <div class="controls" style='padding-top: 5px;'>
-                                    <?php echo (isset($model->birthdate)) ? $df->formatDateTime($model->birthdate, 'long', null) : Yii::t('BbiiModule.bbii', 'Unknown'); ?>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label" style='text-align: left; font-weight: bold'><?php echo Yii::t('BbiiModule.bbii', 'Gender'); ?></label>
-                                <div class="controls" style='padding-top: 5px;'>
-                                    <?php echo (isset($model->gender)) ? (($model->gender) ? Yii::t('BbiiModule.bbii', 'Perempuan') : Yii::t('BbiiModule.bbii', 'Laki-laki')) : Yii::t('BbiiModule.bbii', '-'); ?>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label" style='text-align: left; font-weight: bold'>Sosial / Website</label>
-                                <div class="controls" style='padding-top: 5px;'>
-                                    <?php if ($model->contact_email && $this->module->userMailColumn) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('User.png'), 'e-mail', array('title' => Yii::t('BbiiModule.bbii', 'Contact user by e-mail'))), array('member/mail', 'id' => $model->id)); ?>
-                                    <?php if (isset($model->blogger)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Blogger.png'), 'Blogger', array('title' => 'Blogger', 'target' => '_blank')), $model->blogger); ?>
-                                    <?php if (isset($model->facebook)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Facebook.png'), 'Facebook', array('title' => 'Facebook', 'target' => '_blank')), $model->facebook); ?>
-                                    <?php if (isset($model->flickr)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Flickr.png'), 'Flickr', array('title' => 'Flickr', 'target' => '_blank')), $model->flickr); ?>
-                                    <?php if (isset($model->google)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Google.png'), 'Google', array('title' => 'Google', 'target' => '_blank')), $model->google); ?>
-                                    <?php if (isset($model->linkedin)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Linkedin.png'), 'Linkedin', array('title' => 'Linkedin', 'target' => '_blank')), $model->linkedin); ?>
-                                    <?php if (isset($model->metacafe)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Metacafe.png'), 'Metacafe', array('title' => 'Metacafe', 'target' => '_blank')), $model->metacafe); ?>
-                                    <?php if (isset($model->myspace)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Myspace.png'), 'Myspace', array('title' => 'Myspace', 'target' => '_blank')), $model->myspace); ?>
-                                    <?php if (isset($model->orkut)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Orkut.png'), 'Orkut', array('title' => 'Orkut', 'target' => '_blank')), $model->orkut); ?>
-                                    <?php if (isset($model->tumblr)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Tumblr.png'), 'Tumblr', array('title' => 'Tumblr', 'target' => '_blank')), $model->tumblr); ?>
-                                    <?php if (isset($model->twitter)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Twitter.png'), 'Twitter', array('title' => 'Twitter', 'target' => '_blank')), $model->twitter); ?>
-                                    <?php if (isset($model->website)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Globe.png'), 'Website', array('title' => 'Website', 'target' => '_blank')), $model->website); ?>
-                                    <?php if (isset($model->wordpress)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Wordpress.png'), 'Wordpress', array('title' => 'Wordpress', 'target' => '_blank')), $model->wordpress); ?>
-                                    <?php if (isset($model->yahoo)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Yahoo.png'), 'Yahoo', array('title' => 'Yahoo', 'target' => '_blank')), $model->yahoo); ?>
-                                    <?php if (isset($model->youtube)) echo Chtml::link(CHtml::image($this->module->getRegisteredImage('Youtube.png'), 'Youtube', array('title' => 'Youtube', 'target' => '_blank')), $model->youtube); ?>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label" style='text-align: left; font-weight: bold'>Alamat</label>
-                                <div class="controls" style='padding-top: 5px;'>
-                                    <?php echo CHtml::encode($model->address); ?>
-                                </div>
-                            </div>
-                            
-                        </form>
-                    </div>
-                    <div class="span4">
-                        <div class="control-group">
-                            <label class="control-label" style='text-align: left; font-weight: bold'><?php echo Yii::t('BbiiModule.bbii', 'Number of posts'); ?></label>
-                            <div class="controls" style='padding-top: 5px;'>
-                                <?php echo CHtml::encode($model->posts); ?>
                             </div>
                         </div>
-                        <div class="control-group">
-                            <label class="control-label" style='text-align: left; font-weight: bold'><?php echo Yii::t('BbiiModule.bbii', 'Reputation'); ?></label>
-                            <div class="controls" style='padding-top: 5px;'>
-                                <?php echo CHtml::encode($model->upvoted); ?>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div id="keterangan" class="tab-pane fade" style='padding:20px;'>
+                    <hr/>
                     <center><img align="left" style="" src="<?php echo $model->imgUrlUsaha['medium'] ?>" alt="avatar"></center>
-                    <div class="control-group">
-                                <label class="control-label" style='text-align: left; font-weight: bold'></label>
-                                <div class="controls" style='padding-top: 5px;'>
-                                    <?php echo $model->signature; ?>
-                                     
-                                </div>
-                            </div>
-                    
+                    <?php echo $model->signature; ?>
                 </div>
+
                 <div id="topic" class="tab-pane fade" style='padding:20px;'>
                     <div class='span12'>
                         <div class="header2"><?php echo Yii::t('BbiiModule.bbii', 'Recent Posts'); ?></div>
@@ -181,9 +179,6 @@ foreach (Yii::app()->user->getFlashes() as $key => $message) {
                         ));
                         ?>
                     </div>
-                </div>
-                <div id="post" class="tab-pane fade" style='padding:20px;'>
-                    d
                 </div>
             </div>
         </div>
